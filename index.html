@@ -5,12 +5,9 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <head class="page-header">
-      <div class="page-header-inner">
-        <div class="page-header-block">
-          <a href="#" class="header-logo">
-              <img src="img/logo.png" alt="logo-header" width="137px" height="55.72px">
-          </a>
+    <header class="page-header">
+      <a href="#" class="header-logo">
+          <img src="img/logo.png" alt="logo-header"></a>
           <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-item">
@@ -61,31 +58,33 @@
                   </span>
                 </a>
             </li>
-
           </ul>
-        </nav>
-        </div>
-      </div>
-     </head>
-
+      </nav>
+  </header>
      <div class="slider">
       <div id="slide1">
         <h1 class="slide-title">Нежный пломбир с клубничным джемом</h1>
         <p class="slide-text">Натуральное мороженое из свежих сливок
         и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
         <a href="#" class="slide-btn">Заказать!</a>
+        <input type="radio" id="promo-slide-1" name="promo-toggle" checked>
+        <label for="promo-slide-1"></label>
       </div>
       <div id="slide2">
         <h1 class="slide-title">Сливочное мороженое со вкусом банана</h1>
         <p class="slide-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
            и наслаждение даже в самый жаркий летний день.  </p>
         <a href="#" class="slide-btn">Заказать!</a>
+        <input type="radio" id="promo-slide-2" name="promo-toggle">
+        <label for="promo-slide-2"></label>
       </div>
       <div id="slide3">
         <h1 class="slide-title">Карамельный пломбир с маршмеллоу</h1>
         <p class="slide-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
           завоюет сердца сладкоежек всех возрастов. </p>
         <a href="#" class="slide-btn">Заказать!</a>
+        <input type="radio" id="promo-slide-2" name="promo-toggle">
+        <label for="promo-slide-2"></label>
       </div>
     </div>
     <main>
@@ -209,6 +208,20 @@
           </p>
         </div>
       </section>
+      <article class="last-news">
+        <h3 class="last-news-note">Новое в нашем блоге</h3>
+        <a href="#" class="last-news-title">10 способов сервировки фруктовых щербетов
+          к столу</a>
+      </article>
+      <form action="#" class="subscription" method="post">
+        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
+          в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <input class="email-field" type="email" name="subscription-email" id="subscription-email" placeholder="email@example.com">
+        <button class="btn subscription-btn" type="submit">Отправить</button>
+      </form>
+
+
     </main>
 
 
