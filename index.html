@@ -6,61 +6,57 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="header-logo">
-          <img src="img/logo.png" alt="logo-header"></a>
-          <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">Каталог </a>
-                    <ul class="sub-menu">
-                      <li class="subnav">
-                          <a class="subnav-link-bold" href="#">Новинки</a>
-                      </li>
-                      <li class="subnav-link">
-                          <a href="#">Сливочное</a>
-                      </li>
-                      <li class="subnav-link">
-                          <a href="#">Щербеты</a>
-                      </li>
-                      <li class="subnav-link">
-                        <a href="#">Фруктовый лёд</a>
-                      </li>
-                      <li class="subnav-link">
-                        <a href="#">Малорин</a>
-                      </li>
-                  </ul>
-                </li>
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">Доставка и оплата</a>
-                </li>
-                <li class="navigation-item">
-                    <a href="#" class="navigation-link">О компании</a>
-                </li>
+      <a href="#" class="header-logo"><img src="img/logo.png" alt="logo-header">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">Каталог </a>
+            <ul class="sub-menu">
+              <li class="subnav">
+                <a class="subnav-link-bold" href="#">Новинки</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Сливочное</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Щербеты</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Фруктовый лёд</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Малорин</a>
+              </li>
             </ul>
-            <ul class="navigation-list navigation-user">
-              <li class="navigation-item">
-                  <a href="#" class="navigation-link">+7 800 555-86-28</a>
-              </li>
-              <li class="navigation-item">
-                  <a href="#" class="navigation-link">
-                    <span class="visually-hidden">
-                      Поиск
-                    </span>
-                  </a>
-              </li>
-              <li class="navigation-item">
-                  <a href="#" class="navigation-link">Вход</a>
-              </li>
-              <li class="navigation-item">
-                <a href="#" class="navigation-link">
-                  <span class="visually-hidden">
-                    Корзина
-                  </span>
-                </a>
-            </li>
-          </ul>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О компании</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Вход</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
       </nav>
-  </header>
+    </header>
      <div class="slider">
       <div id="slide1">
         <h1 class="slide-title">Нежный пломбир с клубничным джемом</h1>
@@ -296,5 +292,13 @@
           </p>
         </section>
       </footer>
+      <section class="modal-content modal-feedback">
+        <p class="modal-feedback-title">Мы обязательно ответим вам!<p>
+          <form action="#" class="feedbackform" method="post">
+            <input type="text" id="name" name="user-name" class="input-field" placeholder=" Имя и фамилия">
+            <input type="text" id="email-feedback" name="email-feedback" class="input-field" placeholder="email@example.com">
+            <textarea name="comment" id="comment-field" rows="5" cols="15">В свободной форме</textarea>
+          </form>
+      </section>
   </body>
 </html>
