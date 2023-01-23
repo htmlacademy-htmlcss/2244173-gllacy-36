@@ -60,17 +60,17 @@
     </header>
     <main>
       <section class="slider">
-        <ul class="slide-1">
+        <ul class="slide">
           <li class="slide-item">
             <h1 class="slide-title">Нежный пломбир с клубничным джемом</h1>
             <p class="slide-text slide-text-pink">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
             </p>
             <a href="#" class="slide-btn">Заказать!</a></li>
             <li class="slide-image">
-              <img src="" alt="strawberry" class="slide-image-1">
+              <img src="" alt="strawberry" class="slide-image">
             </li>
       </ul>
-      <ul class="slide-2">
+      <ul class="slide-">
         <li class="slide-item">
           <h1 class="slide-title">Сливочное мороженое со вкусом банана</h1>
           <p class="slide-text slide-text-blue">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
@@ -78,10 +78,10 @@
           <a href="#" class="slide-btn">Заказать!</a>
         </li>
         <li class="slide-image">
-          <img src="" alt="banan" class="slide-image-1">
+          <img src="" alt="banan" class="slide-image-">
         </li>
      </ul>
-     <ul class="slide-3">
+     <ul class="slide">
       <li class="slide-item">
         <h1 class="slide-title">Карамельный пломбир с маршмеллоу</h1>
         <p class="slide-text slide-text-yellow">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
@@ -89,7 +89,7 @@
         <a href="#" class="slide-btn">Заказать!</a>
       </li>
       <li class="slide-image">
-        <img src="" alt="marshmallow" class="slide-image-1">
+        <img src="" alt="marshmallow" class="slide-image">
       </li>
     </ul>
     <div class="slider-controls">
@@ -102,9 +102,9 @@
       </div>
       <ul class="slide-social">
         <li class="slide-social-link">
-            <a class="slide-social-btn slide-btn-telegram" href="#"><span class="visually-hidden">Telegram</span></a>
-            <a class="-slide-social-btn slide-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-            <a class="-slide-social-btn slide-btn-youtube" href="#"><span class="visually-hidden">youtube</span></a>
+            <a class="slide-social-btn slide-btn-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+            <a class="-slide-social-btn slide-btn-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+            <a class="-slide-social-btn slide-btn-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
           </li>
         </ul>
       </section>
@@ -287,11 +287,15 @@
 
       <footer class="page-footer">
         <section class="footer-social">
-          <a class="social-btn social-btn-telegram" href="#"><span class="visually-hidden">Telegram</span></a>
-          <a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-          <a class="social-btn social-btn-youtube" href="#"><span class="visually-hidden">youtube</span></a>
+          <ul class="footer-social-list">
+            <li class="footer-social-link">
+              <a class="social-btn social-btn-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+              <a class="social-btn social-btn-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+              <a class="social-btn social-btn-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+            </li>
+        </ul>
         </section>
-        <section class="footer-nav">
+        <div class="footer-nav">
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
               <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
@@ -306,8 +310,8 @@
               <a class="link-white footer-nav-link" href="#">Экологические стандарты</a>
             </li>
           </ul>
-        </section>
-        <section class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
           <a href="https://htmlacademy.ru" class="copyright-link">
             <img src="#" alt="Html-academy" class="developer">
           </a>
@@ -315,15 +319,8 @@
             <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a>
            &copy;  2021
           </p>
-        </section>
+        </div>
       </footer>
-      <section class="modal-content modal-feedback">
-        <p class="modal-feedback-title">Мы обязательно ответим вам!<p>
-          <form action="#" class="feedbackform" method="post">
-            <input type="text" id="name" name="user-name" class="input-field" placeholder=" Имя и фамилия">
-            <input type="text" id="email-feedback" name="email-feedback" class="input-field" placeholder="email@example.com">
-            <textarea name="comment" id="comment-field" rows="5" cols="15">В свободной форме</textarea>
-          </form>
-      </section>
+
   </body>
 </html>
