@@ -58,33 +58,57 @@
         </ul>
       </nav>
     </header>
-     <div class="slider">
-      <div id="slide1">
-        <h1 class="slide-title">Нежный пломбир с клубничным джемом</h1>
-        <p class="slide-text">Натуральное мороженое из свежих сливок
-        и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-        <a href="#" class="slide-btn">Заказать!</a>
-        <input type="radio" id="promo-slide-1" name="promo-toggle" checked>
-        <label for="promo-slide-1"></label>
-      </div>
-      <div id="slide2">
-        <h1 class="slide-title">Сливочное мороженое со вкусом банана</h1>
-        <p class="slide-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть
-           и наслаждение даже в самый жаркий летний день.  </p>
-        <a href="#" class="slide-btn">Заказать!</a>
-        <input type="radio" id="promo-slide-2" name="promo-toggle">
-        <label for="promo-slide-2"></label>
-      </div>
-      <div id="slide3">
-        <h1 class="slide-title">Карамельный пломбир с маршмеллоу</h1>
-        <p class="slide-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
-          завоюет сердца сладкоежек всех возрастов. </p>
-        <a href="#" class="slide-btn">Заказать!</a>
-        <input type="radio" id="promo-slide-2" name="promo-toggle">
-        <label for="promo-slide-2"></label>
-      </div>
-    </div>
     <main>
+      <section class="slider">
+        <ul class="slide-1">
+          <li class="slide-item">
+            <h1 class="slide-title">Нежный пломбир с клубничным джемом</h1>
+            <p class="slide-text slide-text-pink">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+            </p>
+            <a href="#" class="slide-btn">Заказать!</a></li>
+            <li class="slide-image">
+              <img src="" alt="strawberry" class="slide-image-1">
+            </li>
+      </ul>
+      <ul class="slide-2">
+        <li class="slide-item">
+          <h1 class="slide-title">Сливочное мороженое со вкусом банана</h1>
+          <p class="slide-text slide-text-blue">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
+          </p>
+          <a href="#" class="slide-btn">Заказать!</a>
+        </li>
+        <li class="slide-image">
+          <img src="" alt="banan" class="slide-image-1">
+        </li>
+     </ul>
+     <ul class="slide-3">
+      <li class="slide-item">
+        <h1 class="slide-title">Карамельный пломбир с маршмеллоу</h1>
+        <p class="slide-text slide-text-yellow">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.
+        </p>
+        <a href="#" class="slide-btn">Заказать!</a>
+      </li>
+      <li class="slide-image">
+        <img src="" alt="marshmallow" class="slide-image-1">
+      </li>
+    </ul>
+    <div class="slider-controls">
+      <input type="radio" id="promo-slide-1" name="promo-toggle" checked>
+       <input type="radio" id="promo-slide-2" name="promo-toggle">
+       <input type="radio" id="promo-slide-3" name="promo-toggle">
+       <label for="promo-slide-1"></label>
+       <label for="promo-slide-2"></label>
+       <label for="promo-slide-3"></label>
+      </div>
+      <ul class="slide-social">
+        <li class="slide-social-link">
+            <a class="slide-social-btn slide-btn-telegram" href="#"><span class="visually-hidden">Telegram</span></a>
+            <a class="-slide-social-btn slide-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            <a class="-slide-social-btn slide-btn-youtube" href="#"><span class="visually-hidden">youtube</span></a>
+          </li>
+        </ul>
+      </section>
+
       <div class="container">
         <div class="banner-container-header">
           <h2 class="banner-header">Заказывайте мороженое и получайте подарки!</h2>
