@@ -75,7 +75,7 @@
         </button>
         <img src="" alt="mini-banan" class="slide-image-banan">
         <img src="" alt="mini-marshmallow" class="slide-image-marshmallow">
-        <a href="#" class="slide-btn">Заказать!</a>
+        <a href="#" class="slide-button">Заказать!</a>
       </li>
     <li class="slide-item">
       <h2 class="slide-title">Сливочное мороженое со вкусом банана</h2>
@@ -90,7 +90,7 @@
       </button>
       <img src="" alt="mini-marshmallow" class="slide-image">
       <img src="" alt="mini-strawberry" class="slide-image-marshmallow">
-      <a href="#" class="slide-btn">Заказать!</a>
+      <a href="#" class="slide-button">Заказать!</a>
     </li>
   <li class="slide-item">
     <h2 class="slide-title">Карамельный пломбир с маршмеллоу</h2>
@@ -105,7 +105,7 @@
     </button>
     <img src="" alt="mini-strawberry" class="slide-image">
     <img src="" alt="mini-banan" class="slide-image">
-    <a href="#" class="slide-btn">Заказать!</a>
+    <a href="#" class="slide-button">Заказать!</a>
   </li>
 </ul>
 <div class="slider__controls">
@@ -124,10 +124,10 @@
       <a class="slide-social-btn slide-button-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
     </li>
     <li class="slide-social-link">
-      <a class="-slide-social-btn slide-butoon-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+      <a class="-slide-social-btn slide-button-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
     </li>
     <li class="slide-social-link">
-      <a class="-slide-social-btn slide-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+      <a class="-slide-social-btn slide-button-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
     </li>
   </ul>
   <section class="banner">
@@ -200,12 +200,25 @@
       в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
     </p>
     <input class="email-field" type="email" name="subscription-email" id="subscription-email" placeholder="email@example.com">
-    <button class="btn subscription-btn" type="submit">Отправить</button>
+    <button class="btn subscription-button" type="submit">Отправить</button>
   </form>
   <section class="contacts">
     <h2 class="contacts-title">Доставка любимого мороженого на дом</h2>
     <p class="contacts-subtitle">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+    <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label class="form-label" for="appointment-date">Дата</label>
+      <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+      <label for="appointment-phone">
+        Телефон
+      </label>
+      <input type="tel" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
+      <label for="appointment-address">
+        Адрес
+      </label>
+      <input type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
     <button class="button" type="submit">Отправить</button>
+    </form>
   </section>
   <section class="information-shop">
     <p class="information-title">Адрес главного офиса и офлайн-магазина:</p>
@@ -222,13 +235,13 @@
   <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-link">
-          <a class="social-btn social-butoon-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+          <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="footer-social-link">
-          <a class="social-btn social-butoon-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li class="footer-social-link">
-          <a class="social-btn social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+          <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
         </li>
     </ul>
       <ul class="footer-nav-list">
