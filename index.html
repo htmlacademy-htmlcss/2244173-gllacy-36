@@ -121,10 +121,14 @@
 </div>
   <ul class="slide-social">
     <li class="slide-social-link">
-        <a class="slide-social-btn slide-btn-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
-        <a class="-slide-social-btn slide-btn-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
-        <a class="-slide-social-btn slide-btn-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
-      </li>
+      <a class="slide-social-btn slide-button-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+    </li>
+    <li class="slide-social-link">
+      <a class="-slide-social-btn slide-butoon-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+    </li>
+    <li class="slide-social-link">
+      <a class="-slide-social-btn slide-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+    </li>
   </ul>
   <section class="banner">
     <h2 class="banner-header">Заказывайте мороженое и получайте подарки!</h2>
@@ -176,22 +180,15 @@
       </li>
     </ul>
   </section>
-  <section class="shop-features">
-    <h2 class="shop-features-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
-    </h2>
-    <div class="row-container">
-      <p class="shop-features-item shop-features-ice-cream">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
-      </p>
-      <p class="shop-features-item shop-features-ice-farm">Закупка ингредиентов производится только
-        у проверенных фермерских хозяйств, с которыми
-        нас связывает долговременное сотрудничество.</p>
-    </div>
-    <div class="row-container">
-      <p class="shop-features-item shop-features-ice-eco">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-        и добавки произведены из натурального сырья.</p>
-      <p class="shop-features-item shop-features-ice-delivery">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
-      </p>
-    </div>
+  <section class="advantages">
+    <h2 class="visually-hidden">Наши преимущества</h2>
+    <p class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+    <ul class="advantages-list">
+      <li class="advantages-item advantages-item-production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+      <li class="advantages-item advantages-item-farm">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+      <li class="advantages-item advantages-item-ingredients">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+      <li class="advantages-item advantages-item-delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+    </ul>
   </section>
   <article class="last-news">
     <h3 class="last-news-note">Новое в нашем блоге</h3>
@@ -207,32 +204,8 @@
   </form>
   <section class="contacts">
     <h2 class="contacts-title">Доставка любимого мороженого на дом</h2>
-    <p class="contacts-subtitle">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
-    </p>
-  </section>
-  <section class="appointment">
-    <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-      <p class="appointment-form-date">
-        <label class="form-label" for="appointment-date">Дата</label>
-        <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
-      </p>
-      <p class="appointment-form-phone">
-        <label for="appointment-phone">
-          Телефон
-        </label>
-        <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
-      </p>
-      <p class="appointment-form-address">
-        <label for="appointment-address">
-          Адрес
-        </label>
-        <input type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
-      </p>
-
-      <button class="button" type="submit">Отправить</button>
-    </form>
-
+    <p class="contacts-subtitle">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+    <button class="button" type="submit">Отправить</button>
   </section>
   <section class="information-shop">
     <p class="information-title">Адрес главного офиса и офлайн-магазина:</p>
@@ -242,9 +215,6 @@
       <a href="tel:+78128121212" class="information-number">+7 (812) 812-12-12</a>
       <p class="information-time">(с 10 до 20 ежедневно)</p>
     </address>
-    <form action="#" method="post">
-    <button class="button-form" type="button">Форма обратной связи</button>
-    </form>
   </section>
 </main>
 
@@ -252,13 +222,13 @@
   <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-link">
-          <a class="social-btn social-btn-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+          <a class="social-btn social-butoon-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="footer-social-link">
-          <a class="social-btn social-btn-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-btn social-butoon-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li class="footer-social-link">
-          <a class="social-btn social-btn-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+          <a class="social-btn social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
         </li>
     </ul>
       <ul class="footer-nav-list">
