@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог</title>
-</head>
-<body>
-  <header class="page-header">
-    <a href="index.html" class="header-logo">
-      <img src="img/logo.png" alt="logo-header">
-    </a>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link">Каталог </a>
-          <ul class="sub-menu">
-            <li class="subnav">
-              <a class="subnav-link subnav-link-bold" href="#">Новинки</a>
-            </li>
-            <li class="subnav-link">
-              <a href="#">Сливочное</a>
-            </li>
-            <li class="subnav-link">
-              <a href="#">Щербеты</a>
-            </li>
-            <li class="subnav-link">
-              <a href="#">Фруктовый лёд</a>
-            </li>
-            <li class="subnav-link">
-              <a href="#">Малорин</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">Доставка и оплата</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">О компании</a>
-        </li>
-      </ul>
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">Вход</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link">
-            <span class="visually-hidden">Корзина</span>2 товара
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-inner">
-    <header class="inner-header">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="header-logo">
+        <img src="img/logo.png" alt="logo-header">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">Каталог </a>
+            <ul class="sub-menu">
+              <li class="subnav">
+                <a class="subnav-link subnav-link-bold" href="#">Новинки</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Сливочное</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Щербеты</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Фруктовый лёд</a>
+              </li>
+              <li class="subnav-link">
+                <a href="#">Малорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О компании</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Вход</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Корзина</span>2 товара
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-inner">
       <ul class="breadcrums">
         <li class="breadcrums-item">
           <a href="index.html" class="breadcrims-link">Главная</a>
@@ -74,11 +75,11 @@
         </li>
       </ul>
       <section class="catalog-products">
-        <h2 class="-page-title">Сливочное мороженое</h2>
+        <h1 class="-page-title">Сливочное мороженое</h1>
         <form action="https://echo.htmlacademy.ru/" class="catalog-form" method="get">
           <fieldset class="sort">
             <legend>Сортировка:</legend>
-            <select class="catalog-form customize-form">
+            <select class="catalog-form customize-form" name="sort">
               <option value="popular" selected>по попурярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
@@ -87,11 +88,11 @@
           </fieldset>
           <fieldset class="catalog-range">
             <div class="catalog-range-price">
-              <span>Цена:</span>
+              <legend>Цена:</legend>
               <label>
                 <input type="text" class="min-price" value="100">руб. –
               </label>
-              <label >
+              <label>
                 <input type="text" class="max-price" value="500">руб.
               </label>
             </div>
@@ -112,7 +113,7 @@
             </label>
             <label class="fatness-label">
               <input type="radio" name="fatness" value="above-30">
-              <span class="fatness-value">вышу 30%</span>
+              <span class="fatness-value">выше 30%</span>
             </label>
           </fieldset>
           <fieldset class="filler">
@@ -258,18 +259,20 @@
           </li>
         </ul>
       </section>
-    </header>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-link">
-          <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+          <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy"><span
+              class="visually-hidden">Telegram</span></a>
         </li>
         <li class="footer-social-link">
-          <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy"><span class="visually-hidden">Вконтакте</span></a>
+          <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy"><span
+              class="visually-hidden">Вконтакте</span></a>
         </li>
         <li class="footer-social-link">
-          <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">youtube</span></a>
+          <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+              class="visually-hidden">youtube</span></a>
         </li>
       </ul>
       <ul class="footer-nav-list">
@@ -291,9 +294,10 @@
           <img src="#" alt="Html-academy" class="developer">
         </a>
         <p>Сделано в
-          <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a>&copy;  2021
+          <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a>&copy; 2021
         </p>
       </div>
     </footer>
-</body>
+  </body>
+
 </html>
