@@ -11,12 +11,14 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="header-logo">
-        <img src="img/logo.png" alt="Логотип">
+        <img src="images/logo-gllacy.png" alt="Логотип" width="137" height="56">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Каталог </a>
+            <a href="catalog.html" class="navigation-link">Каталог
+              <img src="images/arrow.svg" alt="Выпадающее меню" class="navigation-arrow" width="16" height="16">
+            </a>
             <ul class="sub-menu">
               <li class="subnav">
                 <a class="subnav-link subnav-link-bold" href="#">Новинки</a>
@@ -49,14 +51,19 @@
           <li class="navigation-item">
             <a href="#" class="navigation-link">
               <span class="visually-hidden">Поиск</span>
+              <img src="images/search.svg" alt="Поиск" class="navigation-search" width="13" height="13">
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Вход</a>
+            <a href="#" class="navigation-link">Вход
+              <img src="images/input.svg" alt="Вход" class="navigation-input" width="13" height="13">
+            </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
-              <span class="visually-hidden">Корзина</span>2 товара
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="navigation-basket" width="14" height="13">
+              2 товара
             </a>
           </li>
         </ul>
@@ -66,9 +73,11 @@
       <ul class="breadcrums">
         <li class="breadcrums-item">
           <a href="index.html" class="breadcrims-link">Главная</a>
+          <img src="images/assortment/two-arrow.svg" alt="Путь" class="breadcrums-arrow" width="7" height="6">
         </li>
         <li class="breadcrums-item">
-          <a href="#" class="breadcrums-link">Каталог</a>
+          <a href="catalog.html" class="breadcrums-link">Каталог</a>
+          <img src="images/assortment/two-arrow.svg" alt="Путь" class="breadcrums-arrow" width="7" height="6">
         </li>
         <li class="breadcrums-item breadcrumbs-current">
           <a href="#" class="breadcrums-link">Сливочное мороженое</a>
@@ -90,10 +99,10 @@
             <div class="catalog-range-price">
               <legend>Цена:</legend>
               <label>
-                <input type="text" class="min-price" value="100">руб. –
+                <input type="text" class="min-price" value="100" name="price-from">руб. –
               </label>
               <label>
-                <input type="text" class="max-price" value="500">руб.
+                <input type="text" class="max-price" value="500" name="price-to">руб.
               </label>
             </div>
           </fieldset>
@@ -147,94 +156,166 @@
       <section class="product-assortment">
         <ul class="assortment-list">
           <li class="assortment-item">
-            <img src="" alt="Малинка" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Малинка</a></h3>
+            <img src="images/assortment/ice-cream-raspberry.jpg" alt="Малинка" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Малинка</a>
+            </h3>
             <p class="assortment-text">Сливочное мороженое с малиновым джемом</p>
             <p class="assortment-price">310 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Фисташка" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Фисташка</a></h3>
+            <img src="images/assortment/ice-cream-pistachio.jpg" alt="Фисташка" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Фисташка</a>
+            </h3>
             <p class="assortment-text">Фисташковый пломбир с кусочками шоколада</p>
             <p class="assortment-price">340 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Черника" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Черника</a></h3>
+            <img src="images/assortment/ice-cream-blueberry.jpg" alt="Черника" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Черника</a>
+            </h3>
             <p class="assortment-text">Крем-брюле с черничным джемом</p>
             <p class="assortment-price">330 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Бабл-гам" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Бабл-гам</a></h3>
+            <img src="images/assortment/ice-cream-bablgum.jpg" alt="Бабл-гам" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Бабл-гам</a>
+            </h3>
             <p class="assortment-text">Ванильный пломбир со сладкой посыпкой</p>
             <p class="assortment-price">320 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Ежевика" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Ежевика</a></h3>
+            <img src="images/assortment/ice-cream-blackberry.jpg" alt="Ежевика" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Ежевика</a>
+            </h3>
             <p class="assortment-text">Сливочное мороженое с ежевичным джемом</p>
             <p class="assortment-price">330 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Банан" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Банан</a></h3>
+            <img src="images/assortment/ice-cream-banan.jpg" alt="Банан" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Банан</a>
+            </h3>
             <p class="assortment-text">Сливочный пломбир с банановым вкусом</p>
             <p class="assortment-price">340 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Шоколадка" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Шоколадка</a></h3>
+            <img src="images/assortment/ice-cream-chocolate.jpg" alt="Шоколадка" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Шоколадка</a>
+            </h3>
             <p class="assortment-text">Классический шоколадный пломбир</p>
             <p class="assortment-price">270 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Клубника" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Клубничка</a></h3>
+            <img src="images/assortment/ice-cream-strawberry.jpg" alt="Клубника" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Клубничка</a>
+            </h3>
             <p class="assortment-text">Сливочный пломбир с клубничным вкусом</p>
             <p class="assortment-price">300 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Лимон" class="assortment-image">
+            <img src="images/assortment/ice-cream-lemon.jpg" alt="Лимон" class="assortment-image" width="168"
+              height="168">
             <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Лимон</a></h3>
             <p class="assortment-text">Освежающий лимонный сорбет</p>
             <p class="assortment-price">310 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Ментол" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Ментол</a></h3>
+            <img src="images/assortment/ice-cream-mentol.jpg" alt="Ментол" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Ментол</a>
+            </h3>
             <p class="assortment-text">Сливочный пломбир с ментоловым сиропом</p>
             <p class="assortment-price">320 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Орешек" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Орешек</a></h3>
+            <img src="images/assortment/ice-cream-nut.jpg" alt="Орешек" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Орешек</a>
+            </h3>
             <p class="assortment-text">Фисташковый пломбир с шоколадным сиропом</p>
             <p class="assortment-price">360 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
           <li class="assortment-item">
-            <img src="" alt="Крем-брюле" class="assortment-image">
-            <h3 class="assortment-name"><a href="catalog.html" class="assorment-link">Крем-брюле</a></h3>
+            <img src="images/assortment/ice-cream-brulee.jpg" alt="Крем-брюле" class="assortment-image" width="168"
+              height="168">
+            <h3 class="assortment-name">
+              <a href="catalog.html" class="assorment-link">Крем-брюле</a>
+            </h3>
             <p class="assortment-text">Классическое крем-брюле</p>
             <p class="assortment-price">280 ₽/кг</p>
-            <a class="assortment-button" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="assortment-button" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <img src="images/basket.svg" alt="Корзина" class="assortment-basket" width="14" height="13">
+            </a>
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Показать ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
+              <img src="images/arrow.svg" alt="Переключает в влево"
+                class="pagination-images-left" width="6" height="11">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
@@ -255,6 +336,8 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
+              <img src="images/arrow.svg" alt="Переключает в вправо"
+                class="pagination-images-right" width="6" height="11">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
@@ -264,20 +347,27 @@
     <footer class="page-footer">
       <ul class="footer-social-list">
         <li class="footer-social-link">
-          <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy"><span
-              class="visually-hidden">Telegram</span></a>
+          <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+            <img src="images/telegram.svg" alt="Телеграм" class="social-image" width="24" height="24">
+          </a>
         </li>
         <li class="footer-social-link">
-          <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy"><span
-              class="visually-hidden">Вконтакте</span></a>
+          <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+            <img src="images/vk.svg" alt="Вконтакте" class="social-image" width="24" height="24">
+          </a>
         </li>
         <li class="footer-social-link">
-          <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
-              class="visually-hidden">youtube</span></a>
+          <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">youtube</span>
+            <img src="images/youtube.svg" alt="youtube" class="social-image" width="24" height="24">
+          </a>
         </li>
       </ul>
       <ul class="footer-nav-list">
         <li class="footer-nav-item">
+          <img src="images/heart.svg" alt="Середечко" class="footer-nav-images">
           <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
         </li>
         <li class="footer-nav-list">
@@ -292,10 +382,10 @@
       </ul>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru" class="copyright-link">
-          <img src="#" alt="Html-academy" class="developer">
+          <img src="images/logo-htmlacademy.svg" alt="Html-academy" class="developer">
         </a>
         <p>Сделано в
-          <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a>&copy; 2021
+          <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a> &copy; 2021
         </p>
       </div>
     </footer>
