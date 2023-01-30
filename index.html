@@ -19,20 +19,20 @@
               <img src="images/arrow.svg" alt="Выпадающее меню" class="navigation-arrow" width="16" height="16">
             </a>
             <ul class="sub-menu">
+              <li class="subnav subnav-link-bold">
+                <a class="subnav-link" href="#">Новинки</a>
+              </li>
               <li class="subnav">
-                <a class="subnav-link subnav-link-bold" href="#">Новинки</a>
+                <a href="#" class="subnav-link">Сливочное</a>
               </li>
-              <li class="subnav-link">
-                <a href="#">Сливочное</a>
+              <li class="subnav">
+                <a href="#" class="subnav-link">Щербеты</a>
               </li>
-              <li class="subnav-link">
-                <a href="#">Щербеты</a>
+              <li class="subnav">
+                <a href="#" class="subnav-link">Фруктовый лёд</a>
               </li>
-              <li class="subnav-link">
-                <a href="#">Фруктовый лёд</a>
-              </li>
-              <li class="subnav-link">
-                <a href="#">Малорин</a>
+              <li class="subnav">
+                <a href="#" class="subnav-link">Малорин</a>
               </li>
             </ul>
           </li>
@@ -44,7 +44,7 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-link-bold">
             <a href="tel:+78005558628" class="navigation-link">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
@@ -157,7 +157,7 @@
           </a>
         </li>
         <li class="slide-social-link">
-          <a class="-slide-social-button slide-button-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
+          <a class="slide-social-button slide-button-youtube" href="https://www.youtube.com/user/htmlacademyru"><span
               class="visually-hidden">youtube</span>
             <img src="images/youtube.svg" alt="youtube" class="slide-social-image" width="24" height="24">
           </a>
@@ -173,17 +173,19 @@
             <img src="images/raspberry.png" alt="Малинка" class="banner-image" width="219" height="268">
             <a class="banner-button" href="#">Хочу подарок</a>
           </li>
+        </ul>
+        <ul class="banner-list">
           <li class="banner-item">
             <h3 class="banner-title">Маршмеллоу даром!</h3>
             <p class="banner-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно
               бесплатно.</p>
             <img src="images/marshmallow.png" alt="Маршмеллоу" class="banner-image" width="219" height="268">
-            <a class="bunner-button" href="#">Хочу подарок</a>
+            <a class="banner-button" href="#">Хочу подарок</a>
           </li>
         </ul>
       </section>
       <section class="assortment">
-        <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <h2 class="assortment-header">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="assortment-list">
           <li class="assortment-item">
             <img src="images/assortment/ice-cream-raspberry.jpg" alt="Малинка" class="assortment-image" width="168"
@@ -240,61 +242,71 @@
         </ul>
       </section>
       <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
-          производства на развес</p>
-        <ul class="advantages-list">
-          <li class="advantages-item advantages-item-production">
-            <img src="images/ice-production.svg" alt="Производство мороженого" class="advantages-image" width="48"
-              height="48">
-            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
-            проверенных временем технологий.
-          </li>
-          <li class="advantages-item advantages-item-farm">
-            <img src="images/ice-farm.svg" alt="Закупка ингредиентов" class="advantages-image" width="48" height="48">
-            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-            связывает долговременное сотрудничество.
-          </li>
-          <li class="advantages-item advantages-item-ingredients">
-            <img src="images/ice-ingredients.svg" alt="Экологичность продукции" class="advantages-image" width="48"
-              height="48">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-            ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          </li>
-          <li class="advantages-item advantages-item-delivery">
-            <img src="images/ice-delivery.svg" alt="Доставка мороженого" class="advantages-image" width="48"
-              height="48">
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-            растаять в пути и позволяет сохранить превосходный вкус.
-          </li>
-        </ul>
+        <div class="advantages-conteiner">
+          <h2 class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
+            производства на развес</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item advantages-item-production">
+              <img src="images/ice-production.svg" alt="Производство мороженого" class="advantages-image" width="48"
+                height="48">
+              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+              и
+              проверенных временем технологий.
+            </li>
+            <li class="advantages-item advantages-item-farm">
+              <img src="images/ice-farm.svg" alt="Закупка ингредиентов" class="advantages-image" width="48" height="48">
+              Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+              связывает долговременное сотрудничество.
+            </li>
+            <li class="advantages-item advantages-item-ingredients">
+              <img src="images/ice-ingredients.svg" alt="Экологичность продукции" class="advantages-image" width="48"
+                height="48">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+              дополнительные
+              ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </li>
+            <li class="advantages-item advantages-item-delivery">
+              <img src="images/ice-delivery.svg" alt="Доставка мороженого" class="advantages-image" width="48"
+                height="48">
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+              мороженому
+              растаять в пути и позволяет сохранить превосходный вкус.
+            </li>
+          </ul>
+        </div>
       </section>
       <article class="last-news">
-        <h3 class="last-news-note">Новое в нашем блоге</h3>
+        <h2 class="visually-hidden">Блог</h2>
+        <p class="last-news-note">Новое в нашем блоге</p>
         <a href="#" class="last-news-title">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <form action="#" class="subscription" method="post">
-        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <input class="email-field" type="email" name="subscription-email" id="subscription-email"
-          placeholder="email@example.com">
-        <button class="button subscription-button" type="submit">Отправить</button>
-      </form>
+      <div class="subscription">
+        <form action="#" class="subscription-menu" method="post">
+          <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
+            вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <input class="email-field" type="email" name="subscription-email" id="subscription-email"
+            placeholder="email@example.com">
+          <button class="button subscription-button" type="submit">Отправить</button>
+        </form>
+      </div>
       <section class="contacts">
         <h2 class="contacts-title">Доставка любимого мороженого на дом</h2>
         <p class="contacts-subtitle">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
           доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="form-label" for="appointment-date">Дата</label>
-          <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
-          <label for="appointment-phone">Телефон</label>
-          <input type="tel" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
-          <label for="appointment-address">Адрес</label>
-          <input type="text" id="appointment-address" name="appointment-address"
-            placeholder="ул. Большая Конюшенная, 19/8">
-          <button class="button" type="submit">Отправить</button>
-        </form>
+        <div class="contacts-container">
+          <p class="contacts-address">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label" for="appointment-date">Дата</label>
+            <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+            <label for="appointment-phone">Телефон</label>
+            <input type="tel" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
+            <label for="appointment-address">Адрес</label>
+            <input type="text" id="appointment-address" name="appointment-address"
+              placeholder="ул. Большая Конюшенная, 19/8">
+            <button class="appointment-button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
       <section class="information-shop">
         <h2 class="visually-hidden">Информация о магазине</h2>
@@ -333,13 +345,13 @@
           <img src="images/heart.svg" alt="Середечко" class="footer-nav-images">
           <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
         </li>
-        <li class="footer-nav-list">
+        <li class="footer-nav-item">
           <a class="footer-nav-link" href="#">Наши документы</a>
         </li>
         <li class="footer-nav-item">
           <a class="footer-nav-link" href="#">О производстве</a>
         </li>
-        <li class="footer-nav-link">
+        <li class="footer-nav-item">
           <a class="link-white footer-nav-link" href="#">Экологические стандарты</a>
         </li>
       </ul>
@@ -347,7 +359,7 @@
         <a href="https://htmlacademy.ru" class="copyright-link">
           <img src="images/logo-htmlacademy.svg" alt="Html-academy" class="developer">
         </a>
-        <p>Сделано в
+        <p class="footer-copyright-text">Сделано в
           <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a> &copy; 2021
         </p>
       </div>
