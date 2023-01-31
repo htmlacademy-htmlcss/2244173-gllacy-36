@@ -30,6 +30,12 @@ body {
   background-color: #FEAFC3;
 }
 
+.button {
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
 /* start header */
 
 .navigation-link {
@@ -90,13 +96,6 @@ body {
   font-size: 18px;
 }
 
-.slide-button {
-  font-weight: 700;
-  line-height: 20px;
-  text-decoration: none;
-  color: #2D3440;
-}
-
 .slide-social {
   list-style: none;
 }
@@ -131,13 +130,6 @@ body {
 
 .banner-text {
   line-height: 22px;
-}
-
-.banner-button {
-  font-weight: 700;
-  line-height: 20px;
-  text-decoration: none;
-  color: #2D3440;
 }
 
 /* end banner */
@@ -247,10 +239,6 @@ body {
   line-height: 22px;
  }
 
- .subscription-button {
-  font-weight: 700;
-  line-height: 20px;
- }
   /*  end subscription */
 
   /* start contacts */
