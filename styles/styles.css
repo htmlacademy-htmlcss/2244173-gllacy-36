@@ -26,15 +26,15 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color:#2D3440;
-  background-color: #FEAFC3;
+  color:#2d3440;
+  background-color: #feafc3;
 }
 
 .button {
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 /* start header */
 
@@ -102,7 +102,7 @@ body {
 
 .slide-social-button {
   text-decoration: none;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 /* end slider */
@@ -118,7 +118,7 @@ body {
 
 .banner-list {
   list-style: none;
-  background-color: #FF7799;
+  background-color: #ff7799;
 }
 
 .banner-title {
@@ -155,12 +155,12 @@ body {
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
 }
 
 .assortment-text {
   line-height: 22px;
-  color: #565C66;
+  color: #565c66;
 }
 
 .assortment-price {
@@ -182,7 +182,7 @@ body {
   padding: 24px;
 }
  .advantages-conteiner {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 16px;
  }
 
@@ -214,7 +214,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
  }
 
  /* end last-news */
@@ -231,7 +231,7 @@ body {
  }
 
  .subscription-menu {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 16px;
  }
 
@@ -261,7 +261,7 @@ body {
   }
 
   .contacts-container {
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
     border-radius: 8px;
   }
 
@@ -303,7 +303,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
   font-style: normal;
  }
 
@@ -323,7 +323,7 @@ body {
 
  .social-button {
   text-decoration: none;
-  color: #FCFCFC;
+  color: #fcfcfc;
  }
 
  .footer-nav-item {
@@ -333,7 +333,7 @@ body {
  }
  .footer-nav-link {
 text-decoration: none;
-color: #2D3440;
+color: #2d3440;
  }
  .footer-nav-link_heart {
   font-weight: 700;
@@ -357,7 +357,7 @@ color: #2D3440;
 
  .breadcrums-link {
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
  }
 
  .catalog-products {
@@ -388,7 +388,7 @@ color: #2D3440;
 
  .pagination-link {
   text-decoration: none;
-  color: #2D3440;
+  color: #2d3440;
  }
 
  /* end pagination */
