@@ -355,3 +355,52 @@ color: #2D3440;
   font-size: 12px;
   line-height: 16px;
  }
+
+ /*********** start catalog.html ************/
+
+ /* start breadcrums */
+
+ .breadcrums-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none;
+ }
+
+ .breadcrums-link {
+  text-decoration: none;
+  color: #2D3440;
+ }
+
+ .catalog-products {
+  font-size: 14px;
+  line-height: 20px;
+ }
+
+ .catalog-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+ }
+
+ /* end breadcrums */
+
+ /* */
+
+ .pagination-show-more {
+  font-weight: 700;
+ }
+
+ /* start pagination */
+
+ .pagination-item {
+  list-style: none;
+  line-height: 20px;
+ }
+
+ .pagination-link {
+  text-decoration: none;
+  color: #2D3440;
+ }
+
+ /* end pagination */
