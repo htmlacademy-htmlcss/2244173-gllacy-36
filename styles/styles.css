@@ -120,7 +120,11 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px;
 
+}
+.slide-item {
+  display: flex;
 }
 
 .slide-title {
@@ -141,14 +145,17 @@ body {
 /* end slider */
 
 /* start banner */
-
-.banner-header{
+.banner {
   display: block;
+  margin-bottom: 81px;
+}
+.banner-header{
   width: 434px;
   margin: auto auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin-bottom: 55px;
 
 }
 .banner-container {
@@ -164,16 +171,30 @@ body {
 }
 
 .banner-item {
+  display: flex;
+  flex-direction: column;
   width: 570px;
 }
 
 .banner-title {
+  display: block;
+  margin-left: 36px;
+  margin-top: 36px;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
+.banner-image {
+  align-self: flex-end;
+}
 .banner-text {
+  display: block;
+  width: 304px;
+  margin: 0 ;
+  margin-bottom: 28px;
+  margin-left: 36px;
   line-height: 22px;
 }
 
@@ -181,6 +202,9 @@ body {
 
 /* start assortment */
 
+.assortment {
+  margin-bottom: 80px;
+}
 .assortment-header {
   display: block;
   width: 527px;
@@ -188,6 +212,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin-bottom: 56px;
 }
 
 .assortment-list {
@@ -198,21 +223,36 @@ padding: 0;
 }
 
 .assortment-item {
+  display: block;
+  text-align: center;
+  background-color: #fcfcfc;
   width: 270px;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
 }
 
 .assortment-image {
-  border-radius: 50%;
+display: block;
+margin-left: 51px;
+margin-bottom: 16px;
+border-radius: 50%;
 }
 
 .assorment-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   text-decoration: none;
   color: #2d3440;
+  width: 190px;
+  margin-left: 40px;
+  margin-bottom: 8px;
 }
 
 .assortment-text {
+  display: block;
+  margin-left: 40px;
   line-height: 22px;
   color: #565c66;
 }
@@ -231,9 +271,10 @@ padding: 0;
 
 .advantages {
   background-image: url("../images/wafer.png");
-  width: 1170px;
   background-repeat: no-repeat;
   padding: 24px;
+  background-size: cover;
+  margin-bottom: 80px;
 }
  .advantages-conteiner {
   background-color: #ffffff;
@@ -267,16 +308,19 @@ padding: 0;
  /* last-news */
  .last-news {
   background-image: url("../images/serving.jpg");
-  width: 570px;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 32px;
-  margin: 0 30px;
+  border-radius: 16px;
+  padding-left: 32px;
+  margin-right: 36px;
+  width: 570px;
  }
  .container {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px;
  }
  .last-news-note {
   line-height: 20px;
@@ -299,16 +343,17 @@ padding: 0;
 
  .subscription {
   background-image: url("../images/mail.png");
-  width: 570px;
+
   background-repeat: no-repeat;
   border-radius: 16px;
-  padding: 6px;
  }
 
  .subscription-menu {
   width: 558px;
   background-color: #ffffff;
+  background-size: cover;
   border-radius: 16px;
+  margin: 6px;
  }
 
  .subscription-text {
@@ -316,6 +361,8 @@ padding: 0;
   width: 506px;
   padding: 26px;
   line-height: 22px;
+  margin: 0;
+  padding-bottom: 120px;
  }
 
   /*  end subscription */
@@ -327,9 +374,11 @@ padding: 0;
     background-image: url("../images/home-delivery.jpg");
     width: 1170px;
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 16px;
     margin: 0;
     padding: 0;
+    margin-bottom: 80px;
   }
 
   .contacts-title {
@@ -368,7 +417,7 @@ padding: 0;
   }
  .appointment-form {
   font-weight: 700;
-  line-height: 20;
+  line-height: 20px;
  }
 
  /* end contacts */
@@ -384,6 +433,7 @@ padding: 0;
  .information-shop {
   background-image: url("../images/address-background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   width: 1170px;
  }
