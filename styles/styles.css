@@ -43,6 +43,25 @@ body {
   margin: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+
+  width: 0.1px;
+  height: 0.1px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  font-size: 0.1px;
+  white-space: nowrap;
+  color: transparent;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
 .button {
   font-weight: 700;
   line-height: 20px;
@@ -117,8 +136,6 @@ body {
 .slide-container {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   margin-bottom: 80px;
 
 }
@@ -127,15 +144,19 @@ body {
 }
 .slide-list {
   margin: 0;
+  padding: 0;
 }
 
 .slide-title {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  margin: 0;
 }
 
 .slide-text {
+  display: block;
+  margin: 0;
   font-size: 18px;
 }
 
