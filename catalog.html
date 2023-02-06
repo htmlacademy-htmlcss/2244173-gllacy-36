@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <div class="basic-container">
     <header class="page-header">
       <nav class="navigation">
         <a class="header-logo" href="index.html">
@@ -69,21 +70,19 @@
       </nav>
     </header>
     <main class="main-inner">
-      <ul class="breadcrums list">
+      <ul class="breadcrums-list list">
         <li class="breadcrums-item">
           <a href="index.html" class="breadcrums-link">Главная</a>
-          <img class="breadcrums-arrow" src="images/assortment/two-arrow.svg" alt="Путь" width="7" height="6">
         </li>
         <li class="breadcrums-item">
           <a class="breadcrums-link" href="catalog.html">Каталог</a>
-          <img class="breadcrums-arrow" src="images/assortment/two-arrow.svg" alt="Путь" width="7" height="6">
         </li>
         <li class="breadcrums-item breadcrums-current">
           <a class="breadcrums-link" href="#">Сливочное мороженое</a>
         </li>
       </ul>
       <section class="catalog-products">
-        <h1 class="-page-title">Сливочное мороженое</h1>
+        <h1 class="catalog-page-title">Сливочное мороженое</h1>
         <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="sort">
             <legend>Сортировка:</legend>
@@ -346,50 +345,53 @@
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="footer-social-list list">
-        <li class="footer-social-link">
-          <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-            <img class="social-image" src="images/telegram.svg" alt="Телеграм" width="24" height="24">
+      <div class="page-footer-container">
+        <ul class="footer-social-list list">
+          <li class="footer-social-link">
+            <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+              <img class="social-image" src="images/telegram.svg" alt="Телеграм" width="24" height="24">
+            </a>
+          </li>
+          <li class="footer-social-link">
+            <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+              <img class="social-image" src="images/vk.svg" alt="Вконтакте" width="24" height="24">
+            </a>
+          </li>
+          <li class="footer-social-link">
+            <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">youtube</span>
+              <img class="social-image" src="images/youtube.svg" alt="youtube" width="24" height="24">
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-nav-list list">
+          <li class="footer-nav-item">
+            <img class="footer-nav-images" src="images/heart.svg" alt="Середечко">
+            <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">О производстве</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="link-white footer-nav-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <a class="copyright-link" href="https://htmlacademy.ru">
+            <img class="developer" src="images/logo-htmlacademy.svg" alt="Html-academy">
           </a>
-        </li>
-        <li class="footer-social-link">
-          <a class="social-button social-butoon-vk" href="https://vk.com./htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-            <img class="social-image" src="images/vk.svg" alt="Вконтакте" width="24" height="24">
-          </a>
-        </li>
-        <li class="footer-social-link">
-          <a class="social-button social-butoon-youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">youtube</span>
-            <img class="social-image" src="images/youtube.svg" alt="youtube" width="24" height="24">
-          </a>
-        </li>
-      </ul>
-      <ul class="footer-nav-list list">
-        <li class="footer-nav-item">
-          <img class="footer-nav-images" src="images/heart.svg" alt="Середечко">
-          <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">Наши документы</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="#">О производстве</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="link-white footer-nav-link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <a class="copyright-link" href="https://htmlacademy.ru">
-          <img class="developer" src="images/logo-htmlacademy.svg" alt="Html-academy">
-        </a>
-        <p class="footer-copyright-text">Сделано в
-          <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a> &copy; 2021
-        </p>
+          <p class="footer-copyright-text">Сделано в
+            <a class="htmlacademy-link" href="https://htmlacademy.ru">.html academy</a> &copy; 2021
+          </p>
+        </div>
       </div>
     </footer>
+  </div>
   </body>
 
 </html>
