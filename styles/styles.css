@@ -244,6 +244,11 @@ body {
   background-color: #fcfcfc;
   width: 270px;
   border-radius: 8px;
+  margin-bottom: 91px;
+}
+
+.assortment-item:nth-last-child(-n+4) {
+  margin-bottom: 0;
 }
 
 .assortment-image {
