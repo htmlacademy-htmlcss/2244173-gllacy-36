@@ -224,26 +224,33 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin-bottom: 55px;
+  padding-bottom: 55px;
+  margin: auto;
 }
+
+.banner-container-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 36px;
+  padding-top: 36px;
+}
+
+
 
 .banner-list {
   display: flex;
   justify-content: space-between;
-  background-color: #ff7799;
-  border-radius: 16px;
 }
 
 .banner-item {
   display: flex;
-  flex-direction: column;
-  width: 570px;
+  background-color: #ff7799;
+  border-radius: 16px;
 }
 
 .banner-title {
   display: block;
-  margin-left: 36px;
-  margin-top: 36px;
+  margin: 0;
   margin-bottom: 28px;
   font-weight: 700;
   font-size: 24px;
@@ -251,6 +258,7 @@ body {
 }
 
 .banner-image {
+  display: block;
   align-self: flex-end;
 }
 
@@ -258,8 +266,7 @@ body {
   display: block;
   width: 304px;
   margin: 0;
-  margin-bottom: 28px;
-  margin-left: 36px;
+  margin-bottom: 40px;
   line-height: 22px;
 }
 
