@@ -369,11 +369,12 @@ body {
 }
 
 .advantages-title {
-  width: 995px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 56px;
+  text-align: center;
 }
 
 .advantages-list {
@@ -410,6 +411,7 @@ body {
 
 .last-news-note {
   line-height: 20px;
+  padding-top: 33px;
 }
 
 .last-news-title {
@@ -468,19 +470,20 @@ body {
 .contacts-title {
   display: block;
   margin: 0 100px;
-  margin-top: 167px;
+  padding-top: 167px;
   width: 356px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin-bottom: 24px;
 }
 
 .contacts-subtitle {
   display: block;
   width: 371px;
   margin: 0 100px;
-  padding-top: 24px;
   line-height: 22px;
+  padding-bottom: 163px;
 }
 
 .contacts-container {
@@ -514,27 +517,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+  padding: 64px;
+
 }
 
 .information-wrapper {
   background-color: #fcfcfc;
-  width: 343px;
-  margin: 64px;
+  border-radius: 8px;
+  width: 300px;
+  padding: 40px;
+  padding-right: 0;
 }
 
 .information-title {
   display: block;
   width: 179px;
-  padding: 0 40px;
   line-height: 22px;
   margin: 0;
 }
 
-.information-address {
-  display: block;
-  margin: 0;
-  padding: 0 40px;
-}
 
 .information-adress-text {
   width: 263px;
