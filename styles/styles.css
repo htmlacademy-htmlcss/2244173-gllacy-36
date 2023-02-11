@@ -84,11 +84,13 @@ body {
 }
 
 .navigation-list {
-  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 422px;
 }
 
 .navigation-user {
-  max-width: 400px;
+  max-width: 431px;
   margin-left: auto;
 }
 
@@ -96,14 +98,25 @@ body {
   display: flex;
 }
 
+.navigation-item {
+}
+
 .navigation-link {
+  display: block;
+  padding: 8px 16px;
   line-height: 20px;
   color: inherit;
   text-decoration: none;
   vertical-align: top;
 }
 
+..navigation-user .navigation-link {
+  min-height: 32px;
+}
 
+.sub-menu  {
+  display: none;
+}
 .subnav-link {
   font-size: 14px;
   line-height: 20px;
