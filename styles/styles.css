@@ -440,12 +440,6 @@ body {
 
 /* start information-shop */
 
-.information-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
 
 .information-shop {
   background-image: url("../images/address-background.jpg");
