@@ -576,16 +576,20 @@ body {
 
 .page-footer {
   display: flex;
-  margin: 0 auto;
+  margin: 48px 0;
 }
 
 .footer-social-list {
+  display: flex;
   width: 80px;
   margin-right: 260px;
 }
 
 .footer-nav-list {
-  width: 356px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 50%;
   margin-right: 260px;
 }
 
@@ -594,9 +598,16 @@ body {
   color: #fcfcfc;
 }
 
+.footer-social-link:not(:last-child) {
+  margin-right: 16px;
+}
+
 .footer-nav-item {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 20px;
+  width: 50%;
 }
 
 .footer-nav-link {
@@ -610,7 +621,6 @@ body {
 
 .footer-copyright {
   width: 200px;
-  margin: 48px;
 }
 
 .footer-copyright-text {
