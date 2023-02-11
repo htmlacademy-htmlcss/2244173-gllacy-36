@@ -226,6 +226,7 @@ body {
   line-height: 46px;
   padding-bottom: 55px;
   margin: auto;
+  text-align: center;
 }
 
 .banner-container-text {
@@ -274,6 +275,8 @@ body {
 
 /* start assortment */
 .assortment-main {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 80px;
 }
 
@@ -283,7 +286,9 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin-bottom: 56px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 107px;
 }
 
 .assortment-list {
@@ -301,15 +306,16 @@ body {
   margin-bottom: 91px;
 }
 
-.assortment-item:nth-last-child(-n+4) {
-  margin-bottom: 0;
-}
-
 .assortment-image {
   display: block;
-  margin-left: 51px;
   margin-bottom: 16px;
   border-radius: 50%;
+  margin-top: -51px;
+  margin-left: 51px;
+}
+
+.assortment-item:nth-last-child(-n+4) {
+  margin-bottom: 0;
 }
 
 .assorment-link {
@@ -318,21 +324,27 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: #2d3440;
-  width: 190px;
-  margin-left: 40px;
   margin-bottom: 8px;
 }
 
 .assortment-text {
   display: block;
-  margin-left: 40px;
   line-height: 22px;
   color: #565c66;
+  padding: 0 40px;
+}
+
+.assortment-wrraper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  padding-bottom: 24px;
 }
 
 .assortment-price {
   font-weight: 700;
   font-size: 20px;
+  margin: 0;
 }
 
 .assortment-button {
