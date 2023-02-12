@@ -576,21 +576,18 @@ body {
 
 .page-footer {
   display: flex;
+  justify-content: space-between;
   margin: 48px 0;
 }
 
 .footer-social-list {
   display: flex;
-  width: 80px;
-  margin-right: 260px;
 }
 
 .footer-nav-list {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 50%;
-  margin-right: 260px;
+  flex-wrap: wrap;
+  width: 365px;
 }
 
 .social-button {
@@ -603,11 +600,10 @@ body {
 }
 
 .footer-nav-item {
-  display: flex;
-  flex-wrap: wrap;
   font-size: 14px;
   line-height: 20px;
   width: 50%;
+  font-weight: 400;
 }
 
 .footer-nav-link {
