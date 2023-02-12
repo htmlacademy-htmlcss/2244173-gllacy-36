@@ -632,7 +632,6 @@ body {
 .breadcrums-list {
   display: flex;
   flex-direction: row;
-  margin-left: 98px;
   margin-bottom: 16px;
 }
 
@@ -659,7 +658,7 @@ body {
   font-weight: 900;
   line-height: 46px;
   margin: 0;
-  margin-left: 98px;
+  margin-bottom: 40px;
 }
 
 .catalog-button {
@@ -670,8 +669,42 @@ body {
 
 /* end breadcrums */
 
-/* */
+/* Форма каталога */
 
+.catalog-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 95px;
+}
+
+.sort {
+  margin: 0;
+  padding: 0;
+  width: 196px;
+}
+
+.catalog-range {
+  margin: 0;
+  padding: 0;
+  width: 196px;
+}
+
+.fatness {
+  margin: 0;
+  padding: 0;
+  width: 383px;
+}
+
+.filler {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 604px;
+}
+
+.catalog-button {
+  width: 185px;
+}
 .pagination-show-more {
   font-weight: 700;
 }
