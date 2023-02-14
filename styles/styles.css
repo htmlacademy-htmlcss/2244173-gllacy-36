@@ -147,6 +147,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 80px;
+  flex-wrap: wrap;
 }
 
 .slide-header {
@@ -189,6 +190,12 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.slider-container-button {
+  display: flex;
 }
 
 .slide-social {
