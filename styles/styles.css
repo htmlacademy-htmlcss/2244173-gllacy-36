@@ -503,8 +503,36 @@ body {
 }
 
 .appointment-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
   font-weight: 700;
   line-height: 20px;
+  margin: 0 40px;
+}
+
+.appointment-form  .info {
+  display: none;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.field-group label,
+.field-group input {
+  display: block;
+}
+
+.appointment-form-address {
+  grid-column: 1/-1;
+}
+
+.appointment-button {
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 /* end contacts */
