@@ -293,18 +293,21 @@ body {
 }
 
 .assortment-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 91px 30px;
 }
 
 .assortment-item {
-  display: block;
   text-align: center;
   background-color: #fcfcfc;
-  width: 270px;
   border-radius: 8px;
-  margin-bottom: 91px;
+}
+
+.assortment-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
 }
 
 .assortment-image {
@@ -315,9 +318,11 @@ body {
   margin-left: 51px;
 }
 
-.assortment-item:nth-last-child(-n+4) {
-  margin-bottom: 0;
+.assortment-name {
+  margin: 0;
+  margin-bottom: 8px;
 }
+
 
 .assorment-link {
   display: block;
@@ -325,20 +330,19 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: #2d3440;
-  margin-bottom: 8px;
 }
 
 .assortment-text {
   display: block;
   line-height: 22px;
   color: #565c66;
-  padding: 0 40px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .assortment-wrraper {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
   padding-bottom: 24px;
 }
 
@@ -503,8 +507,36 @@ body {
 }
 
 .appointment-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
   font-weight: 700;
   line-height: 20px;
+  margin: 0 40px;
+}
+
+.appointment-form  .info {
+  display: none;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.field-group label,
+.field-group input {
+  display: block;
+}
+
+.appointment-form-address {
+  grid-column: 1/-1;
+}
+
+.appointment-button {
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 /* end contacts */
