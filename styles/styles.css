@@ -68,6 +68,10 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: #2d3440;
+  padding: 12px 32px;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
 }
 
 .list {
@@ -79,28 +83,47 @@ body {
 /* start header */
 
 .header-logo {
-  width: 140px;
   margin-right: 32px;
+}
+
+.header-images {
+  display: block;
+  text-align: center;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  min-width: 422px;
+  align-content: center;
 }
 
 .navigation-user {
-  max-width: 431px;
-  margin-left: auto;
+  margin-left: 164px;
 }
 
 .navigation {
   display: flex;
-  margin-top: 24px;
+  margin: 24px 0;
+}
+
+.navigation-icon {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+}
+
+
+
+.navigation-link-login .navigation-icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
 }
 
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 6px 16px;
   line-height: 20px;
@@ -110,9 +133,10 @@ body {
 }
 
 
-.sub-menu  {
+.sub-menu {
   display: none;
 }
+
 .subnav-link {
   font-size: 14px;
   line-height: 20px;
@@ -208,9 +232,17 @@ body {
   height: 12px;
 }
 
+.slide-social-link:not(:last-child) {
+  margin-right: 16px;
+}
+
 .slide-social-button {
   text-decoration: none;
   color: #fcfcfc;
+}
+
+.slide-button-order {
+  background-color: #fcfcfc;
 }
 
 /* end slider */
@@ -270,6 +302,10 @@ body {
   margin: 0;
   margin-bottom: 40px;
   line-height: 22px;
+}
+
+.banner-button {
+  width: 112px;
 }
 
 /* end banner */
@@ -342,7 +378,6 @@ body {
 
 .assortment-wrraper {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 24px;
 }
 
@@ -354,7 +389,15 @@ body {
 
 .assortment-button {
   text-decoration: none;
-  color: #000000;
+}
+
+.assortment-icon {
+  position: absolute;
+  padding: 8px 11px;
+  margin-left: 73px;
+  background-color: #ff2f64;
+  border-radius: 26px;
+  fill: #fcfcfc;
 }
 
 /* end assortment */
@@ -386,12 +429,74 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 40px;
+  margin-top: 56px;
 }
 
 .advantages-item {
-  width: 442px;
+  width: 505px;
   line-height: 22px;
-  padding: 0 40px;
+}
+
+.advantages-text {
+  position: relative;
+  margin-left: 64px;
+}
+
+.advantages-image-production::before {
+  content: " ";
+  background-image: url("../images/ice-production.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #2d3440;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  right: 458px;
+}
+
+.advantages-image-farm::before {
+  content: " ";
+  background-image: url("../images/ice-farm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #2d3440;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  right: 458px;
+}
+
+.advantages-image-ingredients::before {
+  content: " ";
+  background-image: url("../images/ice-ingredients.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #2d3440;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  right: 458px;
+}
+
+.advantages-image-delivery::before {
+  content: " ";
+  background-image: url("../images/ice-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #2d3440;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  right: 458px;
 }
 
 /* end advantags */
@@ -515,8 +620,23 @@ body {
   margin: 0 40px;
 }
 
-.appointment-form  .info {
+.appointment-form .info {
   display: none;
+}
+
+.appointment-form-date {
+  position: relative;
+}
+
+.appointment-form-date::after {
+  content: " ";
+  background-image: url("../images/info.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 46px;
+  top: 3px;
 }
 
 .field-group {
@@ -531,12 +651,24 @@ body {
 }
 
 .appointment-form-address {
+  position: relative;
   grid-column: 1/-1;
 }
 
 .appointment-button {
   grid-column: 1/-1;
   justify-self: center;
+}
+
+.appointment-form-address::after {
+  content: " ";
+  background-image: url("../images/info.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 58px;
+  top: 3px;
 }
 
 /* end contacts */
@@ -745,7 +877,7 @@ body {
 }
 
 .pagination-show-more {
- display: block;
+  display: block;
   margin: auto;
   font-weight: 700;
   width: 179px;
@@ -765,6 +897,7 @@ body {
 .pagination-item {
   line-height: 20px;
 }
+
 .pagination-item:not(:last-child) {
   margin-right: 13px;
 }
