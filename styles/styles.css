@@ -432,10 +432,13 @@ body {
 
 .assortment-icon {
   position: absolute;
-  padding: 8px 11px;
+  padding: 7px;
   margin-left: 73px;
   background-color: #ff2f64;
-  border-radius: 26px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
   fill: #fcfcfc;
 }
 
@@ -468,8 +471,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 40px;
-  margin-top: 56px;
+  padding: 56px 40px;
 }
 
 .advantages-item {
@@ -543,12 +545,16 @@ body {
 /* last-news */
 .last-news {
   background-image: url("../images/serving.jpg");
-  background-size: cover;
+  background-size: 655px;
   background-repeat: no-repeat;
   border-radius: 16px;
   padding-left: 32px;
   margin-right: 36px;
   width: 570px;
+  height: 224px;
+  background-position-x: -18px;
+  background-position-y: -108px;
+  background-color: #fcfcfc;
 }
 
 .blog-container {
@@ -586,7 +592,6 @@ body {
 }
 
 .subscription-menu {
-  width: 558px;
   background-color: #ffffff;
   background-size: cover;
   border-radius: 16px;
@@ -598,7 +603,25 @@ body {
   padding: 26px;
   line-height: 22px;
   margin: 0;
+  padding-bottom: 44px;
 }
+
+.email-field {
+  width: 332px;
+  height: 48px;
+  margin-left: 26px;
+  margin-bottom: 28px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.email-field::placeholder {
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
 
 /*  end subscription */
 
@@ -608,17 +631,22 @@ body {
   display: flex;
   background-image: url("../images/home-delivery.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1200px;
+  background-position-y: -135px;
   border-radius: 16px;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
 }
 
+.contacts-wrapper {
+  margin-left: 100px;
+  margin-top: 167px;
+}
+
 .contacts-title {
   display: block;
-  margin: 0 100px;
-  padding-top: 167px;
+  margin: 0;
   width: 356px;
   font-weight: 900;
   font-size: 32px;
@@ -629,9 +657,9 @@ body {
 .contacts-subtitle {
   display: block;
   width: 371px;
-  margin: 0 100px;
   line-height: 22px;
   padding-bottom: 163px;
+  margin-right: 135px;
 }
 
 .contacts-container {
@@ -640,13 +668,16 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   width: 500px;
-  margin: 64px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .contacts-address {
   display: block;
   width: 380px;
+  margin: 0;
   padding: 40px 40px;
+  padding-bottom: 32px;
   line-height: 22px;
 }
 
@@ -657,6 +688,30 @@ body {
   font-weight: 700;
   line-height: 20px;
   margin: 0 40px;
+}
+
+.appointment-info {
+  height: 48px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.appointment-date {
+  width: 117px;
+}
+
+.appointment-phone {
+  width: 287px;
+}
+
+.appointment-address {
+  width: 420px;
+}
+
+.appointment-info::placeholder {
+  padding-left: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
 }
 
 .appointment-form .info {
@@ -678,6 +733,10 @@ body {
   top: 3px;
 }
 
+.form-label {
+  margin-bottom: 8px;
+}
+
 .field-group {
   display: flex;
   flex-direction: column;
@@ -692,6 +751,7 @@ body {
 .appointment-form-address {
   position: relative;
   grid-column: 1/-1;
+  margin-top: 20px;
 }
 
 .appointment-button {
@@ -710,6 +770,12 @@ body {
   top: 3px;
 }
 
+.appointment-button {
+  background-color: #ff2f64;
+  margin-top: 32px;
+  color: #fcfcfc;
+}
+
 /* end contacts */
 
 /* start information-shop */
@@ -721,15 +787,15 @@ body {
   background-size: cover;
   border-radius: 16px;
   padding: 64px;
-
+  background-position-y: -80px;
 }
 
 .information-wrapper {
   background-color: #fcfcfc;
   border-radius: 8px;
-  width: 300px;
-  padding: 40px;
-  padding-right: 0;
+  width: 343px;
+  height: 364px;
+  padding-left: 40px;
 }
 
 .information-title {
@@ -737,6 +803,7 @@ body {
   width: 179px;
   line-height: 22px;
   margin: 0;
+  padding-top: 40px;
 }
 
 
