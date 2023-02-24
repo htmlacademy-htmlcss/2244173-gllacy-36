@@ -482,62 +482,36 @@ body {
 .advantages-text {
   position: relative;
   margin-left: 64px;
+  color: #565c66;
+}
+
+.advantages-text::before {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #2d3440;
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  right: 458px;
 }
 
 .advantages-image-production::before {
-  content: " ";
   background-image: url("../images/ice-production.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #2d3440;
-  border-radius: 100%;
-  position: absolute;
-  display: block;
-  width: 48px;
-  height: 48px;
-  right: 458px;
 }
 
 .advantages-image-farm::before {
-  content: " ";
   background-image: url("../images/ice-farm.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #2d3440;
-  border-radius: 100%;
-  position: absolute;
-  display: block;
-  width: 48px;
-  height: 48px;
-  right: 458px;
 }
 
 .advantages-image-ingredients::before {
-  content: " ";
   background-image: url("../images/ice-ingredients.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #2d3440;
-  border-radius: 100%;
-  position: absolute;
-  display: block;
-  width: 48px;
-  height: 48px;
-  right: 458px;
 }
 
 .advantages-image-delivery::before {
-  content: " ";
   background-image: url("../images/ice-delivery.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 2px solid #2d3440;
-  border-radius: 100%;
-  position: absolute;
-  display: block;
-  width: 48px;
-  height: 48px;
-  right: 458px;
 }
 
 /* end advantags */
@@ -568,6 +542,7 @@ body {
 .last-news-note {
   line-height: 20px;
   padding-top: 33px;
+  color: #565c66;
 }
 
 .last-news-title {
@@ -604,6 +579,7 @@ body {
   line-height: 22px;
   margin: 0;
   padding-bottom: 44px;
+  color: #565c66;
 }
 
 .email-field {
@@ -660,6 +636,7 @@ body {
   line-height: 22px;
   padding-bottom: 163px;
   margin-right: 135px;
+  color: #565c66;
 }
 
 .contacts-container {
@@ -679,6 +656,7 @@ body {
   padding: 40px 40px;
   padding-bottom: 32px;
   line-height: 22px;
+  color: #565c66;
 }
 
 .appointment-form {
@@ -799,6 +777,7 @@ body {
 }
 
 .information-title {
+  color: #565c66;
   display: block;
   width: 179px;
   line-height: 22px;
@@ -817,6 +796,7 @@ body {
 }
 
 .information-phone {
+  color: #565c66;
   width: 203px;
   line-height: 22px;
   font-style: normal;
@@ -834,6 +814,7 @@ body {
 }
 
 .information-time {
+  color: #565c66;
   margin: 0;
   font-size: 14px;
   line-height: 20px;
@@ -857,7 +838,7 @@ body {
 .footer-nav-list {
   display: flex;
   flex-wrap: wrap;
-  width: 365px;
+  width: 300px;
 }
 
 .social-button {
@@ -870,6 +851,7 @@ body {
 }
 
 .footer-nav-item {
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   width: 50%;
@@ -883,6 +865,17 @@ body {
 
 .footer-nav-link_heart {
   font-weight: 700;
+}
+
+.footer-nav-item-heart::before {
+  position: absolute;
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+  left: -23px;
+  top: 2px;
+  content: '';
 }
 
 .footer-copyright {
