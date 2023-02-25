@@ -82,6 +82,60 @@ body {
 
 /* start header */
 
+.navigation-item:hover,
+.navigation-item-info:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation-item:active,
+.navigation-item-info:active {
+  background-color: #fcfcfc;
+  border-radius: 30px;
+}
+
+.navigation-link:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+  transition: outline 0.3s ease;
+}
+
+.navigation-link:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
+  background-color: #ff4a78;
+  border-radius: 30px;
+  transition: outline 0.3s ease;
+}
+
+
+.navigation-arrow:hover,
+.navigation-arrow:active,
+.navigation-arrow:focus {
+  transform: rotate(180deg);
+  fill: #fcfcfc;
+}
+
+.navigation-item:hover,
+.navigation-item-info:hover {
+  background-color: #ff4a78;
+  opacity: 60%;
+  color: #fcfcfc;
+}
+
+.navigation-item:active,
+.navigation-item-info:active {
+  background-color: #ff4a78;
+  opacity: 30%;
+  color: #fcfcfc;
+}
+
+.navigation-arrow {
+  fill: #2d3440;
+}
+
 .header-logo {
   margin-right: 16px;
 }
@@ -155,13 +209,6 @@ body {
   padding-left: 13px;
 }
 
-/*
-.navigation-link-login .navigation-icon {
-  right: auto;
-  left: 16px;
-  margin: auto 0;
-}
-*/
 
 .navigation-link {
   position: relative;
@@ -181,6 +228,7 @@ body {
 .sub-menu {
   display: none;
 }
+
 
 .subnav-link {
   font-size: 14px;
