@@ -899,10 +899,26 @@ body {
 }
 
 .breadcrums-item {
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  padding-right: 28px;
+  margin-right: 28px;
+}
+
+.breadcrums-item::after {
+  background-image: url("../images/two-arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 10px;
+  height: 7px;
+  right: -20px;
+  top: 8px;
+  content: '';
+}
+
+.breadcrums-item:last-child::after {
+  content: none;
 }
 
 .breadcrums-link {
@@ -998,7 +1014,7 @@ body {
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 13px;
+  margin-right: 15px;
 }
 
 .pagination-current {
@@ -1008,11 +1024,39 @@ body {
   height: 24px;
   border-radius: 50px;
   text-align: center;
+  box-sizing: border-box;
+  padding: 2px;
 }
 
 .pagination-link {
+  position: relative;
   text-decoration: none;
   color: #2d3440;
+}
+
+.pagination-prev::before {
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 11px;
+  position: absolute;
+  opacity: 30%;
+  top: 10px;
+  right: -5px;
+  transform: rotate(90deg);
+  content: '';
+}
+
+.pagination-next::after {
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 11px;
+  position: absolute;
+  top: 4px;
+  right: -17px;
+  transform: rotate(-90deg);
+  content: '';
 }
 
 /* end pagination */

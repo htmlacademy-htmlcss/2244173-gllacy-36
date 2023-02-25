@@ -17,8 +17,15 @@
             <img class="header-images" src="images/logo-gllacy.png" alt="Логотип" width="137" height="56">
           </a>
           <ul class="navigation-list list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог </a>
+            <li class="navigation-item navigation-item-current">
+              <a class="navigation-link" href="catalog.html">
+                <span class="navigation-menu-text">Каталог</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none" viewBox="0 0 12 7">
+                  <path fill="#2D3440" fill-rule="evenodd"
+                    d="M1.8 1.05A.67.67 0 0 0 .88 2l4.66 4.66a.66.66 0 0 0 .95 0L11.14 2a.67.67 0 0 0-.94-.95L6 5.25l-4.2-4.2Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
               <ul class="sub-menu list">
                 <li class="subnav subnav-link-bold">
                   <a class="subnav-link" href="#">Новинки</a>
@@ -45,25 +52,42 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user list">
-            <li class="navigation-item navigation-link-bold">
-              <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+            <li class="navigation-item-info navigation-link-bold">
+              <a class="navigation-link navigation-link-info" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+            <li class="navigation-item-info navigation-item-search">
+              <a class="navigation-link navigation-link-info" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <img class="navigation-search" src="images/search.svg" alt="Поиск" width="13" height="13">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="#2D3440" fill-rule="evenodd"
+                    d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
+                    clip-rule="evenodd" />
+                </svg>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Вход
-                <img class="navigation-input" src="images/input.svg" alt="Вход" width="13" height="13">
+            <li class="navigation-item-info navigation-item-input">
+              <a class="navigation-link navigation-link-info" href="#">
+                <span class="visually-hidden">Вход</span>
+                <svg class="navigation-icon navigation-link-login" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="#2D3440" fill-rule="evenodd"
+                    d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span class="navigation-text">Вход</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+            <li class="navigation-item-info navigation-item-basket">
+              <a class="navigation-link navigation-link-info" href="#">
                 <span class="visually-hidden">Корзина</span>
-                <img class="navigation-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
-                2 товара
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="#2D3440" fill-rule="evenodd"
+                    d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                    clip-rule="evenodd" />
+                </svg>
+                <span class="navigation-text">2 товара</span>
               </a>
             </li>
           </ul>
@@ -163,7 +187,12 @@
                   <p class="assortment-price">310 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -180,7 +209,12 @@
                   <p class="assortment-price">340 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -197,7 +231,12 @@
                   <p class="assortment-price">330 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -214,7 +253,12 @@
                   <p class="assortment-price">320 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -231,7 +275,12 @@
                   <p class="assortment-price">330 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -248,7 +297,12 @@
                   <p class="assortment-price">340 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -265,7 +319,12 @@
                   <p class="assortment-price">270 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -282,7 +341,12 @@
                   <p class="assortment-price">300 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -299,7 +363,12 @@
                   <p class="assortment-price">310 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -316,7 +385,12 @@
                   <p class="assortment-price">320 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -333,7 +407,12 @@
                   <p class="assortment-price">360 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -350,7 +429,12 @@
                   <p class="assortment-price">280 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
-                    <img class="assortment-basket" src="images/basket.svg" alt="Корзина" width="14" height="13">
+                    <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -361,8 +445,6 @@
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-prev pagination-disabled">
-                  <img class="pagination-images-left" src="images/arrow.svg" alt="Переключает в влево" width="6"
-                    height="11">
                   <span class="visually-hidden">Предыдущая страница</span>
                 </a>
               </li>
@@ -383,8 +465,6 @@
               </li>
               <li class="pagination-item">
                 <a class="pagination-link pagination-next" href="#">
-                  <img class="pagination-images-right" src="images/arrow.svg" alt="Переключает в вправо" width="6"
-                    height="11">
                   <span class="visually-hidden">Следующая страница</span>
                 </a>
               </li>
@@ -414,8 +494,7 @@
           </li>
         </ul>
         <ul class="footer-nav-list list">
-          <li class="footer-nav-item">
-            <img class="footer-nav-images" src="images/heart.svg" alt="Середечко">
+          <li class="footer-nav-item footer-nav-item-heart">
             <a class="footer-nav-link footer-nav-link_heart" href="#">Для поставщиков</a>
           </li>
           <li class="footer-nav-item">
@@ -425,7 +504,7 @@
             <a class="footer-nav-link" href="#">О производстве</a>
           </li>
           <li class="footer-nav-item">
-            <a class="link-white footer-nav-link" href="#">Экологические стандарты</a>
+            <a class="link-white footer-nav-link" href="#">Экологические&nbsp;стандарты</a>
           </li>
         </ul>
         <div class="footer-copyright">
