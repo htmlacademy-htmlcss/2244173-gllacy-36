@@ -667,7 +667,7 @@ body {
 }
 
 .advantages-text::before {
-  content: " ";
+  content: "";
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #2d3440;
@@ -706,7 +706,6 @@ body {
   padding-left: 32px;
   margin-right: 36px;
   width: 570px;
-  height: 224px;
   background-position-x: -18px;
   background-position-y: -108px;
   background-color: #fcfcfc;
@@ -772,10 +771,13 @@ body {
   border-radius: 4px;
 }
 
-.email-field::placeholder {
+.email-field {
   padding-left: 16px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.email-field::placeholder {
   color: #b9b9b9;
 }
 
@@ -853,6 +855,12 @@ body {
   height: 48px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
+  padding-left: 16px;
+  line-height: 20px;
+}
+
+.appointment-info::placeholder {
+  color: #b9b9b9;
 }
 
 .appointment-date {
@@ -867,11 +875,6 @@ body {
   width: 420px;
 }
 
-.appointment-info::placeholder {
-  padding-left: 16px;
-  line-height: 20px;
-  color: #b9b9b9;
-}
 
 .appointment-form .info {
   display: none;
@@ -882,7 +885,7 @@ body {
 }
 
 .appointment-form-date::after {
-  content: " ";
+  content: "";
   background-image: url("../images/info.svg");
   background-repeat: no-repeat;
   width: 13px;
@@ -919,7 +922,7 @@ body {
 }
 
 .appointment-form-address::after {
-  content: " ";
+  content: "";
   background-image: url("../images/info.svg");
   background-repeat: no-repeat;
   width: 13px;
@@ -1056,7 +1059,7 @@ body {
   height: 15px;
   left: -23px;
   top: 2px;
-  content: '';
+  content: "";
 }
 
 .footer-copyright {
@@ -1095,7 +1098,7 @@ body {
   height: 7px;
   right: -20px;
   top: 8px;
-  content: '';
+  content: "";
 }
 
 .breadcrums-item:last-child::after {
@@ -1225,7 +1228,7 @@ body {
   top: 10px;
   right: -5px;
   transform: rotate(90deg);
-  content: '';
+  content: "";
 }
 
 .pagination-next::after {
@@ -1237,7 +1240,7 @@ body {
   top: 4px;
   right: -17px;
   transform: rotate(-90deg);
-  content: '';
+  content: "";
 }
 
 /* end pagination */
