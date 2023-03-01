@@ -13,15 +13,18 @@
     <div class="basic-container">
       <header class="page-header">
         <nav class="navigation">
-          <a class="header-logo" href="index.html">
-            <img class="header-images" src="images/logo-gllacy.png" alt="Логотип" width="137" height="56">
-          </a>
-          <ul class="navigation-list list">
+          <ul class="navigation-list list navigation-list-left">
+            <li lass="navigation-item">
+              <a class="header-logo" href="index.html">
+                <img class="header-images" src="images/logo-gllacy.png" alt="Логотип" width="137" height="56">
+              </a>
+            </li>
             <li class="navigation-item navigation-item-current">
-              <a class="navigation-link" href="catalog.html">
+              <a class="navigation-link navigation-link-open navigation-link-catalog" href="#">
                 <span class="navigation-menu-text">Каталог</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none" viewBox="0 0 12 7">
-                  <path fill="#2D3440" fill-rule="evenodd"
+                <svg class="navigation-arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="12" height="7" fill="none" viewBox="0 0 12 7">
+                  <path fill-rule="evenodd"
                     d="M1.8 1.05A.67.67 0 0 0 .88 2l4.66 4.66a.66.66 0 0 0 .95 0L11.14 2a.67.67 0 0 0-.94-.95L6 5.25l-4.2-4.2Z"
                     clip-rule="evenodd" />
                 </svg>
@@ -51,27 +54,27 @@
               <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user list">
-            <li class="navigation-item-info navigation-link-bold">
-              <a class="navigation-link navigation-link-info" href="tel:+78005558628">+7 800 555-86-28</a>
+          <ul class="navigation-list list">
+            <li class="navigation-item-info">
+              <a class="navigation-link navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
-            <li class="navigation-item-info navigation-item-search">
-              <a class="navigation-link navigation-link-info" href="#">
+            <li class="navigation-item-info">
+              <a class="navigation-link  navigation-link-open navigation-link-active search" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                  width="16" height="16" fill="none" viewBox="0 0 16 16">
-                  <path fill="#2D3440" fill-rule="evenodd"
+                <svg class="navigation-icon navigation-icon-search" aria-hidden="true" focusable="false"
+                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="currentColor" fill-rule="evenodd"
                     d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
                     clip-rule="evenodd" />
                 </svg>
               </a>
             </li>
-            <li class="navigation-item-info navigation-item-input">
-              <a class="navigation-link navigation-link-info" href="#">
+            <li class="navigation-item-info">
+              <a class="navigation-link navigation-link-open navigation-link-active" href="#">
                 <span class="visually-hidden">Вход</span>
-                <svg class="navigation-icon navigation-link-login" aria-hidden="true" focusable="false"
-                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                  <path fill="#2D3440" fill-rule="evenodd"
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="currentColor" fill-rule="evenodd"
                     d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
                     clip-rule="evenodd" />
                 </svg>
@@ -79,11 +82,11 @@
               </a>
             </li>
             <li class="navigation-item-info navigation-item-basket">
-              <a class="navigation-link navigation-link-info" href="#">
+              <a class="navigation-link navigation-link-open navigation-link-active" href="#">
                 <span class="visually-hidden">Корзина</span>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
-                  <path fill="#2D3440" fill-rule="evenodd"
+                  <path fill="currentColor" fill-rule="evenodd"
                     d="M1.17 1.25a.67.67 0 0 0 0 1.33h1.77l.47 2.34v.05l.97 4.84a1.83 1.83 0 0 0 1.82 1.46h5.62a1.83 1.83 0 0 0 1.82-1.46V9.8l.93-4.86a.67.67 0 0 0-.66-.8h-9.3L4.14 1.8a.67.67 0 0 0-.66-.54H1.17Zm4.52 8.3-.81-4.07h8.23l-.78 4.07a.5.5 0 0 1-.49.4H6.18a.5.5 0 0 1-.49-.4ZM4.56 13.5a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z"
                     clip-rule="evenodd" />
                 </svg>
@@ -108,25 +111,39 @@
         <section class="catalog-products">
           <h1 class="catalog-page-title">Сливочное мороженое</h1>
           <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="sort">
-              <legend>Сортировка:</legend>
-              <select class="catalog-form customize-form" name="sort">
-                <option value="popular" selected>по попурярности</option>
-                <option value="cheap">сначала недорогие</option>
-                <option value="expensive">сначала дорогие</option>
-                <option value="by-fatness">по жирности</option>
+            <fieldset class="sort catalog-filter-group">
+              <legend class="customize-form-title">Сортировка:</legend>
+              <select class="customize-form" name="sort">
+                <option class="customize-form-text" value="popular" selected>по попурярности</option>
+                <option class="customize-form-text" value="cheap">сначала недорогие</option>
+                <option class="customize-form-text" value="expensive">сначала дорогие</option>
+                <option class="customize-form-text" value="by-fatness">по жирности</option>
               </select>
             </fieldset>
-            <fieldset class="catalog-range">
+            <fieldset class="catalog-range catalog-filter-group">
               <legend>Цена:</legend>
-              <label>
-                <input class="min-price" type="text" value="100" name="price-from">руб. –
-              </label>
-              <label>
-                <input class="max-price" type="text" value="500" name="price-to">руб.
-              </label>
+              <div class="range">
+                <div class="range-wrapper-inputs">
+                  <label>
+                    <input class="min-price" type="text" value="100" name="price-from">руб. –
+                  </label>
+                  <label>
+                    <input class="max-price" type="text" value="500" name="price-to">руб.
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-ice">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
-            <fieldset class="fatness">
+            <fieldset class="fatness catalog-filter-group">
               <legend>Жирность:</legend>
               <label class="fatness-label">
                 <input type="radio" name="fatness" value="0">
@@ -145,30 +162,37 @@
                 <span class="fatness-value">выше 30%</span>
               </label>
             </fieldset>
-            <fieldset class="filler">
+            <fieldset class="filler catalog-filter-group">
               <legend>Наполнители:</legend>
-              <label class="filler-label filler-label-1">
-                <input class="filler-toggle" type="checkbox" name="chocolate-filler" value="chocolate" checked>
-                <span class="filler-name">шоколадные</span>
-              </label>
-              <label class="filler-label filler-label-2">
-                <input class="filler-toggle" type="checkbox" name="sugar-filler" value="sugar" checked>
-                <span class="filler-name">сахарные посыпки</span>
-              </label>
-              <label class="filler-label filler-label-3">
-                <input class="filler-toggle" type="checkbox" name="fruit-filler" value="fruit">
-                <span class="filler-name">фрукты</span>
-              </label>
-              <label class="filler-label filler-label-4">
-                <input class="filler-toggle" type="checkbox" name="syrop-filler" value="syrop">
-                <span class="filler-name">сиропы</span>
-              </label>
-              <label class="filler-label filler-label-5">
-                <input class="filler-toggle" type="checkbox" name="jam-filler" value="jam">
-                <span class="filler-name">джемы</span>
-              </label>
+              <div class="filler-container">
+                <label class="filler-label filler-label-1">
+                  <input class="filler-toggle" type="checkbox" name="chocolate-filler" value="chocolate" checked>
+                  <span class="filler-mark"></span>
+                  <span class="filler-name">шоколадные</span>
+                </label>
+                <label class="filler-label filler-label-2">
+                  <input class="filler-toggle" type="checkbox" name="sugar-filler" value="sugar" checked>
+                  <span class="filler-mark"></span>
+                  <span class="filler-name">сахарные посыпки</span>
+                </label>
+                <label class="filler-label filler-label-3">
+                  <input class="filler-toggle" type="checkbox" name="fruit-filler" value="fruit">
+                  <span class="filler-mark"></span>
+                  <span class="filler-name">фрукты</span>
+                </label>
+                <label class="filler-label filler-label-4">
+                  <input class="filler-toggle" type="checkbox" name="syrop-filler" value="syrop">
+                  <span class="filler-mark"></span>
+                  <span class="filler-name">сиропы</span>
+                </label>
+                <label class="filler-label filler-label-5">
+                  <input class="filler-toggle" type="checkbox" name="jam-filler" value="jam">
+                  <span class="filler-mark"></span>
+                  <span class="filler-name">джемы</span>
+                </label>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="catalog-filter-group">
               <button class="catalog-button" type="submit">Применить</button>
             </fieldset>
           </form>
@@ -441,7 +465,7 @@
             </li>
           </ul>
           <div class="pagination-container">
-            <button class="button pagination-show-more" type="button">Показать ещё</button>
+            <button class="button pagination-show-more button-state" type="button">Показать ещё</button>
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-prev pagination-disabled">
