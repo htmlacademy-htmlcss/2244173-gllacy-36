@@ -212,6 +212,42 @@ body {
 
 /* end header */
 
+/* popover */
+
+.navigation-item-basket {
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 441px;
+  padding: 48px;
+  color: #2d3440;
+  background-color: #ffffff;
+  min-height: 156px;
+  box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.popover-title {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.cart-item {
+  display: grid;
+}
+
+
+
 /******* start main ********/
 
 
@@ -1192,22 +1228,55 @@ body {
 .range-scale {
   position: relative;
   height: 2px;
-  margin-bottom: 16px;
+  margin-top: 8px;
   background-color: #565C66;
   border-radius: 2px;
-  opacity: 30%;
 }
 
-.range-scale.range-ice {
+.range-ice {
   position: absolute;
   height: 2px;
   background-color: #565C66;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fcfcfc;
+  border: 5px solid #2d3440;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
 }
 
 .fatness {
   margin: 0;
   padding: 0;
   width: 383px;
+}
+
+.fatness-container {
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 8px 24px;
+  border-radius: 18px;
+}
+
+.fatness-label {
+  position: relative;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
 }
 
 .filler {
@@ -1235,7 +1304,7 @@ body {
   border-radius: 18px;
 }
 
-.filler-mark {
+.control-mark {
   position: absolute;
   top: 2px;
   left: 0;
