@@ -66,6 +66,11 @@
                     clip-rule="evenodd" />
                 </svg>
               </a>
+              <div class="popover popover-search">
+                <div class="popover-content">
+                  <input class="popover-input" type="search" placeholder="Поиск по сайту">
+                </div>
+              </div>
             </li>
             <li class="navigation-item-info">
               <a class="navigation-link navigation-link-open navigation-link-active" href="#">
@@ -78,6 +83,23 @@
                 </svg>
                 <span class="navigation-text">Вход</span>
               </a>
+              <div class="popover popover-login">
+                <div class="popover-content">
+                  <h2 class="popover-title">Личный кабинет</h2>
+                  <input class="popover-field" type="email" name="subscription-email" id="subscription-email"
+                    placeholder="email@example.com">
+                  <input class="popover-field" type="password">
+                  <div class="popover-container-link">
+                  <button class="cart-item-button button button-pink" type="submit" >
+                    <span class="cart-button-text">Войти</span>
+                  </button>
+                  <div class="popover-wrapper-link">
+                  <a href="#" class="popover-link">Забыли пароль?</a>
+                  <a href="#" class="popover-link">Регистрация</a>
+                </div>
+                </div>
+                </div>
+              </div>
             </li>
             <li class="navigation-item-info navigation-item-basket">
               <a class="navigation-link navigation-link-open navigation-link-active" href="#">
@@ -95,19 +117,36 @@
                   <h2 class="popover-title">Корзина</h2>
                   <ul class="cart-items-list list">
                     <li class="cart-item">
-                      <img class="assortment-image" src="images/assortment/ice-cream-raspberry.jpg" alt="Малинка"
-                        width="46" height="46">
-                      <p class="cart-item-title">Малинка</p>
-                      <p class="cart-item-kg">1 кг х 310 ₽</p>
+                      <img class="cart-image" src="images/assortment/ice-cream-raspberry.jpg" alt="Малинка" width="46"
+                        height="46">
+                      <div class="cart-wrapper">
+                        <p class="cart-item-title">Малинка</p>
+                        <p class="cart-item-kg">1 кг х 310 ₽</p>
+                      </div>
                       <p class="cart-item-price">310 ₽</p>
                       <button class="popover-delete-button">
                         <span class="visually-hidden">Удалить</span>
                       </button>
                     </li>
+                    <li class="cart-item">
+                      <img class="cart-image" src="images/assortment/ice-cream-bablgum.jpg" alt="Бабл-гам" width="46"
+                        height="46">
+                      <div class="cart-wrapper">
+                        <p class="cart-item-title">Бабл-гам</p>
+                        <p class="cart-item-kg">1,5 кг х 320 ₽</p>
+                      </div>
+                      <p class="cart-item-price">480 ₽</p>
+                      <button class="popover-delete-button">
+                        <span class="visually-hidden">Удалить</span>
+                      </button>
+                    </li>
                   </ul>
-                  <button type="button" class="cart-item-button button">
-                    <span class="cart-button-text">Оформить заказ</span>
-                  </button>
+                  <div class="cart-container">
+                    <button type="button" class="cart-item-button button button-pink">
+                      <span class="cart-button-text">Оформить заказ</span>
+                    </button>
+                    <span class="cart-total">Итого: 790 ₽</span>
+                  </div>
                 </div>
               </div>
             </li>
