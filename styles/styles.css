@@ -1697,7 +1697,7 @@ body {
   border: none;
   padding: 0;
   top: 32px;
-  right: 32px;
+  right: 38px;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -1710,6 +1710,7 @@ body {
   width: 16px;
   height: 1px;
   background-color: #000000;
+  right: 1px;
   content: "";
 }
 
@@ -1741,8 +1742,9 @@ body {
 
 .auth-form .modal-field {
   width: 442px;
+  box-sizing: border-box;
 }
 
 .modal-container-close {
-  display: none;
+
 }
