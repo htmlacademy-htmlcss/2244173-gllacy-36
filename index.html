@@ -517,6 +517,7 @@
               <a class="information-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
               <p class="information-time">(с 10 до 20 ежедневно)</p>
             </address>
+            <button class="button information-button button-pink" type="submit">Форма обратной связи</button>
           </div>
         </section>
       </main>
@@ -578,6 +579,32 @@
           </p>
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group modal-group">
+                <label class="visually-hidden" for="auth-login">Имя и фамилия</label>
+                <input class="popover-field modal-field field" type="text" id="auth-login" name="auth-login" placeholder="Имя и фамилия">
+              </p>
+              <p class="field-group modal-group">
+                <label class="visually-hidden" for="auth-password">Пароль</label>
+                <input class="popover-field modal-field field" type="email" name="subscription-email" id="subscription-email"
+                    placeholder="email@example.com">
+              </p>
+              <p class="field-group modal-group">
+                <label for="" class="visually-hidden"></label>
+                <textarea class="popover-field modal-field field" name="comment" id="comment-field" placeholder="В свободной форме" rows="5" cols="15"></textarea>
+              </p>
+              <button class="button modal-button button-pink" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 
