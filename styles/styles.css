@@ -1169,7 +1169,7 @@ body {
   margin-bottom: 32px;
 }
 
-.information-button  {
+.information-button {
   width: 250px;
 }
 
@@ -1210,7 +1210,7 @@ body {
   color: #2d3440;
 }
 
-.footer-nav-link:hover  {
+.footer-nav-link:hover {
   font-weight: 700;
 }
 
@@ -1266,7 +1266,7 @@ body {
   text-decoration: underline;
   color: #2d3440;
   text-underline-offset: 5px;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .breadcrums-item {
@@ -1329,14 +1329,15 @@ body {
 
 .customize-form {
   border: none;
-  background-color: #fcfcfc;
-  opacity: 30%;
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
   padding: 8px 16px;
   border-radius: 20px;
   padding-right: 37px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 16px center;
+  width: 196px;
   appearance: none;
 }
 
@@ -1349,8 +1350,9 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  width: 196pxpx;
-  margin-right: auto;
+  width: 196px;
+  margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 
@@ -1360,18 +1362,33 @@ body {
   margin-bottom: 95px;
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 11px;
+  margin-left: 15px;
+}
+
 .catalog-range {
   margin: 0;
   padding: 0;
+  margin-right: 24px;
   width: 196px;
 }
 
 .range-scale {
   position: relative;
   height: 2px;
-  margin-top: 8px;
-  background-color: #565C66;
+  background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
+  width: 164px;
+}
+
+.range-container {
+  position: absolute;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 15px 16px;
+  left: 310px;
+  border-radius: 20px;
 }
 
 .range-ice {
@@ -1384,16 +1401,55 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-color: #fcfcfc;
-  border: 5px solid #2d3440;
+  background-color: #2d3440;
   border-radius: 50%;
   cursor: pointer;
+  border: none;
 }
+
+.range-toggle-min::before,
+.range-toggle-min::after {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 6px;
+  left: 6px;
+  content: "";
+}
+
+.toggle-min {
+  top: -8px;
+  left: -3px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -15px;
+}
+
+.range-toggle:hover {
+  background-color: #fcfcfc;
+}
+
+.range-toggle:focus-visible {
+  background-color: #fcfcfc;
+  border: 2px solid #2d3440;
+}
+
+.range-toggle:active {
+  background-color: #2d3440;
+}
+
 
 .range-input {
   width: 30px;
-  padding: 0 2px;
-  font: inherit;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
   text-align: center;
   background-color: transparent;
   border: none;
@@ -1407,17 +1463,32 @@ body {
 }
 
 .fatness-container {
+  display: flex;
+  justify-content: space-between;
   background-color: rgba(252, 252, 252, 0.3);
   padding: 8px 24px;
   border-radius: 18px;
+  width: 383px;
 }
 
-.fatness-label {
-  position: relative;
+.fatness-title {
+  margin-bottom: 8px;
+  margin-left: 18px;
 }
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
 }
 
 .filler {
@@ -1427,13 +1498,18 @@ body {
   width: 604px;
 }
 
+.filler-title {
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+
 .filler-label {
   position: relative;
   display: block;
 }
 
-.filler-label:not(:last-child) {
-  margin-right: 17px;
+.filler-label {
+  padding-left: 30px;
 }
 
 .filler-container {
@@ -1443,6 +1519,13 @@ body {
   flex-wrap: wrap;
   padding: 10px 24px;
   border-radius: 18px;
+  justify-content: space-between;
+  width: 604px;
+}
+
+.fatness-label {
+  position: relative;
+  padding-left: 30px;
 }
 
 .control-mark {
@@ -1451,7 +1534,17 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  background-image: url(../images/square.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  content: "";
 }
 
 .catalog-button {
@@ -1459,6 +1552,9 @@ body {
   border: 2px solid #fcfcfc;
   border-radius: 20px;
   padding: 8px 52px;
+  margin-top: 28px;
+  margin-left: 16px;
+  color: #2d3440;
 }
 
 .catalog-button:hover {
@@ -1643,7 +1739,7 @@ body {
   margin-bottom: 16px;
 }
 
-.auth-form  .modal-field {
+.auth-form .modal-field {
   width: 442px;
 }
 

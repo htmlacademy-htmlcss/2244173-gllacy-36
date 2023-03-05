@@ -121,30 +121,34 @@
               </select>
             </fieldset>
             <fieldset class="catalog-range catalog-filter-group">
-              <legend>Цена:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
+                  <legend class="range-price">Цена:</legend>
+                  <div class="range-price"></div>
                   <label class="catalog-filter-label">
-                    <input class="range-input" type="text" value="100" name="price-from">руб. –
+                    <input class="range-input" type="text" value="100" name="price-from">₽ –
                   </label>
                   <label class="catalog-filter-label">
-                    <input class="range-input" type="text" value="500" name="price-to">руб.
+                    <input class="range-input" type="text" value="500" name="price-to">₽
                   </label>
+
                 </div>
-                <div class="range-scale range-container">
-                  <div class="range-ice" style="left: 24px; width: 164px">
-                    <button class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+                <div class="range-container">
+                  <div class="range-scale">
+                    <div class="range-ice" style="left: 24px; width: 68px">
+                      <button class="range-toggle range-toggle-min toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle range-toggle-min toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </fieldset>
             <fieldset class="fatness catalog-filter-group">
-              <legend>Жирность:</legend>
+              <legend class="fatness-title">Жирность:</legend>
               <div class="fatness-container">
                 <label class="fatness-label">
                   <input class="visually-hidden control-input" type="radio" name="fatness" value="0">
@@ -169,15 +173,17 @@
               </div>
             </fieldset>
             <fieldset class="filler catalog-filter-group">
-              <legend>Наполнители:</legend>
+              <legend class="filler-title">Наполнители:</legend>
               <div class="filler-container">
                 <label class="filler-label filler-label-1">
-                  <input class="visually-hidden control-input" type="checkbox" name="chocolate-filler" value="chocolate" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="chocolate-filler" value="chocolate"
+                    checked>
                   <span class="control-mark"></span>
                   <span class="filler-name">шоколадные</span>
                 </label>
                 <label class="filler-label filler-label-2">
-                  <input class="visually-hidden control-input" type="checkbox" name="sugar-filler" value="sugar" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="sugar-filler" value="sugar"
+                    checked>
                   <span class="control-mark"></span>
                   <span class="filler-name">сахарные посыпки</span>
                 </label>
