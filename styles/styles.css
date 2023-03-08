@@ -95,16 +95,22 @@ body {
 
 .navigation {
   display: flex;
-  margin: 24px 0;
+  margin: 21px 0;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.header-logo {
+  width: 137px;
+  display: block;
+  margin-right: 16px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 13px;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -113,17 +119,16 @@ body {
   line-height: 20px;
   color: inherit;
   text-decoration: none;
-  gap: 4px;
   padding: 8px 16px;
-}
-
-.navigation-list-left {
-  gap: 16px;
 }
 
 .navigation-link-catalog {
   display: flex;
-  gap: 6px;
+  gap: 10px;
+}
+
+.navigation-list-right {
+  width: 431px;
 }
 
 .navigation-link-phone {
@@ -418,7 +423,7 @@ body {
   transform: rotate(-45deg);
 }
 
-.popover-delete-button:hover  {
+.popover-delete-button:hover {
   opacity: 30%;
 }
 
@@ -430,8 +435,8 @@ body {
 .slide-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
-  margin-top: 21px;
+  margin-bottom: 83px;
+  margin-top: 10px;
   flex-wrap: wrap;
 }
 
@@ -443,10 +448,10 @@ body {
   display: flex;
   align-items: center;
 }
-/*
+
 .slide-item:not(.slide-item-current) {
   display: none;
-} */
+}
 
 
 .slide-title {
@@ -470,15 +475,18 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 2px;
 }
 
 .slider-container-button {
   display: flex;
-  height: 12px;
+  align-items: flex-end;
 }
 
 .slide-container-image {
   position: relative;
+  left: 5px;
+  top: 10px;
 }
 
 
@@ -494,16 +502,21 @@ body {
 }
 
 .slide-mini-image {
+  margin-left: 75px;
   position: relative;
+  top: 13px;
+  left: 4px;
 }
 
 .slide-wrapper-mini-image {
   position: absolute;
-  background-color: rgba(255, 203, 216, 1);
+  background-color: #ffcbd8;
+  opacity: 40%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   top: 50%;
+  left: -23%;
   transform: translateY(-50%);
   z-index: -1;
 }
@@ -512,12 +525,19 @@ body {
 .slide-social {
   display: flex;
   flex-direction: row;
+  top: 3px;
+  left: 2px;
+  position: relative;
 }
 
 .slider-toggle {
   border: 0;
   border-radius: 100px;
-  display: block;
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  /* display: flex; */
+  position: relative;
 }
 
 .slider-toggle:not(:last-child) {
@@ -533,7 +553,9 @@ body {
 }
 
 .slide-button {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 38px;
   height: 38px;
   border-radius: 26px;
@@ -543,34 +565,14 @@ body {
 }
 
 .slide-button-left {
-  left: 24px;
+  left: -18px;
 }
 
 .slide-button-right {
-  left: -20px;
+  right: -18px;
 }
 
-/*
 
-.slide-image::before {
-  position: absolute;
-
-  content: "";
-}
-
-.slide-image-banan {
-  position: relative;
-}
-
-.slide-circle-pink-mini::before {
-  position: absolute;
-  background-color: rgba(255, 203, 216, 1);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  content: "";
-}
-*/
 .slide-icone {
   position: absolute;
   content: "";
@@ -626,10 +628,15 @@ body {
 
 .slide-social-link:not(:last-child) {
   margin-right: 16px;
+  left: 3px;
+  position: relative;
 }
 
 .slide-button-order {
   background-color: #fcfcfc;
+  top: 9px;
+  left: -4px;
+  position: relative;
 }
 
 .social-button {
@@ -739,8 +746,9 @@ body {
 .banner-container-text {
   display: flex;
   flex-direction: column;
-  padding-left: 36px;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 36px;
+  padding-right: 0;
 }
 
 .banner-list {
@@ -766,19 +774,23 @@ body {
 .banner-image {
   display: block;
   align-self: flex-end;
+  padding-left: 12px;
 }
 
 .banner-text {
   display: block;
   width: 304px;
   margin: 0;
-  margin-bottom: 40px;
   line-height: 22px;
+  margin-top: -21px;
 }
 
 .banner-button {
   background-color: #fcfcfcfc;
   width: 112px;
+  left: -4px;
+  top: 2px;
+  position: relative;
 }
 
 /* end banner */
@@ -787,7 +799,7 @@ body {
 .assortment-main {
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
 .assortment-header {
@@ -798,7 +810,7 @@ body {
   line-height: 46px;
   margin: auto;
   text-align: center;
-  margin-bottom: 107px;
+  margin-bottom: 106px;
 }
 
 .assortment-list {
@@ -869,6 +881,8 @@ body {
   height: 32px;
   box-sizing: border-box;
   text-decoration: none;
+  position: relative;
+  top: -5px;
 }
 
 .assortment-button:hover {
