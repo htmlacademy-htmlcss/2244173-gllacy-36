@@ -701,6 +701,9 @@ body {
 
 
 .button-pink {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #ff2f64;
   background-clip: inherit;
   color: #fcfcfc;
@@ -1076,6 +1079,7 @@ body {
 }
 
 .email-field {
+  font-family: "Inter", sans-serif;
   width: 311px;
   height: 43px;
   border: 1px solid #b9b9b9;
@@ -1088,9 +1092,6 @@ body {
 
 .subscription-button {
   margin-left: 11px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .email-field::placeholder {
@@ -1106,8 +1107,8 @@ body {
   display: flex;
   background-image: url("../images/home-delivery.jpg");
   background-repeat: no-repeat;
-  background-size: 1200px;
-  background-position-y: -135px;
+  background-size: 1225px;
+  background-position-y: -140px;
   border-radius: 16px;
   margin: 0;
   padding: 0;
@@ -1116,7 +1117,7 @@ body {
 
 .contacts-wrapper {
   margin-left: 100px;
-  margin-top: 167px;
+  margin-top: 170px;
 }
 
 .contacts-title {
@@ -1126,14 +1127,14 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .contacts-subtitle {
   display: block;
   width: 371px;
   line-height: 22px;
-  padding-bottom: 163px;
+  padding-bottom: 145px;
   margin-right: 135px;
   color: #565c66;
 }
@@ -1144,7 +1145,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   width: 500px;
-  margin-top: 64px;
+  margin-top: 65px;
   margin-bottom: 64px;
 }
 
@@ -1168,7 +1169,7 @@ body {
 }
 
 .appointment-info {
-  height: 48px;
+  height: 44px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   padding-left: 16px;
@@ -1177,6 +1178,9 @@ body {
 
 .appointment-info::placeholder {
   color: #b9b9b9;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Inter", sans-serif;
 }
 
 .appointment-phone {
@@ -1203,7 +1207,7 @@ body {
   width: 13px;
   height: 13px;
   position: absolute;
-  left: 46px;
+  left: 44px;
   top: 3px;
 }
 
@@ -1225,13 +1229,13 @@ body {
 .appointment-form-address {
   position: relative;
   grid-column: 1/-1;
-  margin-top: 20px;
+  margin-top: 19px;
 }
 
 .appointment-button {
   grid-column: 1/-1;
   justify-self: center;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .appointment-form-address::after {
@@ -1241,8 +1245,8 @@ body {
   width: 13px;
   height: 13px;
   position: absolute;
-  left: 58px;
-  top: 3px;
+  left: 56px;
+  top: 2px;
 }
 
 /* end contacts */
@@ -1262,8 +1266,7 @@ body {
 .information-wrapper {
   background-color: #fcfcfc;
   border-radius: 8px;
-  width: 343px;
-  height: 364px;
+  width: 302px;
   padding-left: 40px;
 }
 
@@ -1273,7 +1276,7 @@ body {
   width: 179px;
   line-height: 22px;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 42px;
 }
 
 
@@ -1293,6 +1296,7 @@ body {
   font-style: normal;
   margin: 0;
   margin-top: 24px;
+  margin-bottom: 12px;
 }
 
 .information-number {
@@ -1301,7 +1305,6 @@ body {
   text-decoration: none;
   color: #2d3440;
   font-style: normal;
-  margin-top: 12px;
 }
 
 .information-time {
@@ -1310,11 +1313,12 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .information-button {
-  width: 250px;
+  margin-bottom: 35px;
+  margin-left: -3px;
 }
 
 /* end information-shop */
@@ -1338,7 +1342,7 @@ body {
 }
 
 .footer-social-link:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .footer-nav-item {
@@ -1371,8 +1375,8 @@ body {
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  left: -23px;
-  top: 2px;
+  left: -25px;
+  top: 3px;
   content: "";
 }
 
