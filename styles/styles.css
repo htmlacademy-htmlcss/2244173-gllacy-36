@@ -444,7 +444,7 @@ body {
 .slide-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 84px;
+  margin-bottom: 85px;
   margin-top: 10px;
   flex-wrap: wrap;
 }
@@ -699,9 +699,6 @@ body {
   background-color: #e7e7e7;
 }
 
-.subscription-button {
-  margin-left: 18px;
-}
 
 .button-pink {
   background-color: #ff2f64;
@@ -737,7 +734,7 @@ body {
 
 /* start banner */
 .banner {
-  margin-bottom: 81px;
+  margin-bottom: 82px;
 }
 
 .banner-header {
@@ -947,7 +944,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   margin: auto;
-  padding-top: 56px;
+  padding-top: 57px;
   text-align: center;
 }
 
@@ -981,6 +978,7 @@ body {
   width: 46px;
   height: 46px;
   right: 457px;
+  top: -1px;
 }
 
 .advantages-image-ingredients {
@@ -1016,9 +1014,9 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   padding-left: 32px;
-  margin-right: 36px;
+  margin-right: 31px;
   width: 570px;
-  background-position-x: -18px;
+  background-position-x: -10px;
   background-position-y: -108px;
   background-color: #fcfcfc;
 }
@@ -1033,8 +1031,10 @@ body {
 
 .last-news-note {
   line-height: 20px;
-  padding-top: 33px;
+  padding-top: 30px;
   color: #565c66;
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .last-news-title {
@@ -1056,6 +1056,7 @@ body {
   background-image: url("../images/mail.png");
   background-repeat: no-repeat;
   border-radius: 16px;
+  background-size: 570px;
 }
 
 .subscription-menu {
@@ -1070,18 +1071,24 @@ body {
   padding: 26px;
   line-height: 22px;
   margin: 0;
-  padding-bottom: 44px;
+  padding-bottom: 40px;
   color: #565c66;
 }
 
 .email-field {
-  width: 332px;
-  height: 48px;
-  margin-left: 26px;
-  margin-bottom: 28px;
+  width: 311px;
+  height: 43px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 28px 26px;
+}
+
+.subscription-button {
+  margin-left: 11px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
