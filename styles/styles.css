@@ -806,7 +806,7 @@ body {
 .assortment-main {
   display: flex;
   flex-direction: column;
-  margin-bottom: 76px;
+  margin-bottom: 80px;
 }
 
 .assortment-header {
@@ -870,7 +870,7 @@ body {
 
 .assortment-wrraper {
   display: flex;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   justify-content: space-between;
 }
 
@@ -934,7 +934,7 @@ body {
   border-radius: 16px;
   padding: 24px;
   background-size: cover;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .advantages-container {
@@ -1020,7 +1020,7 @@ body {
   margin-right: 31px;
   width: 570px;
   background-position-x: -10px;
-  background-position-y: -108px;
+  background-position-y: -106px;
   background-color: #fcfcfc;
 }
 
@@ -1034,7 +1034,7 @@ body {
 
 .last-news-note {
   line-height: 20px;
-  padding-top: 30px;
+  padding-top: 32px;
   color: #565c66;
   margin: 0;
   margin-bottom: 14px;
@@ -1059,7 +1059,9 @@ body {
   background-image: url("../images/mail.png");
   background-repeat: no-repeat;
   border-radius: 16px;
-  background-size: 570px;
+  background-size: 580px;
+  width: 570px;
+  background-position: 30%
 }
 
 .subscription-menu {
@@ -1087,11 +1089,12 @@ body {
   padding-left: 16px;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 0 28px 26px;
+  margin: 0 0 29px 26px;
 }
 
 .subscription-button {
-  margin-left: 11px;
+  margin-left: 12px;
+  margin-top: 3px;
 }
 
 .email-field::placeholder {
@@ -1117,7 +1120,7 @@ body {
 
 .contacts-wrapper {
   margin-left: 100px;
-  margin-top: 170px;
+  margin-top: 168px;
 }
 
 .contacts-title {
@@ -1145,7 +1148,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   width: 500px;
-  margin-top: 65px;
+  margin-top: 64px;
   margin-bottom: 64px;
 }
 
@@ -1154,7 +1157,7 @@ body {
   width: 380px;
   margin: 0;
   padding: 40px 40px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   line-height: 22px;
   color: #565c66;
 }
@@ -1169,28 +1172,15 @@ body {
 }
 
 .appointment-info {
-  height: 44px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
   padding-left: 16px;
-  line-height: 20px;
 }
 
 .appointment-info::placeholder {
   color: #b9b9b9;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Inter", sans-serif;
-}
 
-.appointment-phone {
-  width: 287px;
 }
-
-.appointment-address {
-  width: 420px;
-}
-
 
 .appointment-form .info {
   display: none;
@@ -1221,21 +1211,26 @@ body {
   margin: 0;
 }
 
-.field-group label,
+
 .field-group input {
-  display: block;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 12px 14px;
+  font-family: "Inter", sans-serif;
 }
 
 .appointment-form-address {
   position: relative;
   grid-column: 1/-1;
-  margin-top: 19px;
+  margin-top: 21px;
 }
 
 .appointment-button {
   grid-column: 1/-1;
   justify-self: center;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .appointment-form-address::after {
@@ -1260,7 +1255,7 @@ body {
   background-size: cover;
   border-radius: 16px;
   padding: 64px;
-  background-position-y: -80px;
+  background-position-y: -84px;
 }
 
 .information-wrapper {
@@ -1276,7 +1271,7 @@ body {
   width: 179px;
   line-height: 22px;
   margin: 0;
-  padding-top: 42px;
+  padding-top: 41px;
 }
 
 
@@ -1313,7 +1308,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
+  margin-top: -2px;
 }
 
 .information-button {
@@ -1339,6 +1335,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
+  margin-bottom: 17px;
+  margin-top: 2px;
 }
 
 .footer-social-link:not(:last-child) {
@@ -1375,9 +1373,16 @@ body {
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  left: -25px;
-  top: 3px;
+  left: -24px;
+  top: 2px;
   content: "";
+}
+
+.copyright-link {
+width: 93px;
+display: block;
+margin-left: 8px;
+margin-top: 2px;
 }
 
 .developer:hover {
@@ -1392,6 +1397,8 @@ body {
   width: 197px;
   font-size: 12px;
   line-height: 16px;
+  margin-left: 8px;
+  margin-top: 9px;
 }
 
 .htmlacademy-link {
