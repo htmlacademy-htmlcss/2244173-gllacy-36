@@ -95,7 +95,7 @@ body {
 
 .navigation {
   display: flex;
-  margin: 24px 0 23px 0;
+  margin: 23px 0 23px 0;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -1224,7 +1224,7 @@ body {
 .appointment-form-address {
   position: relative;
   grid-column: 1/-1;
-  margin-top: 21px;
+  margin-top: 22px;
 }
 
 .appointment-button {
@@ -1336,7 +1336,7 @@ body {
   flex-wrap: wrap;
   width: 300px;
   margin-bottom: 17px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .footer-social-link:not(:last-child) {
