@@ -1808,6 +1808,7 @@ margin-top: 2px;
 .pagination-link {
   position: relative;
   text-decoration: none;
+  border-radius: 50%;
   color: #2d3440;
   display: block;
   width: 24px;
