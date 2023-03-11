@@ -55,9 +55,9 @@
               <a class="navigation-link" href="#">О компании</a>
             </li>
           </ul>
-          <ul class="navigation-list list">
+          <ul class="navigation-list navigation-list-right list">
             <li class="navigation-item-info">
-              <a class="navigation-link navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item-info">
               <!-- Для того, чтобы появилось состояние, когда открывается поповер нужно добавить класс navigation-link-open-->
@@ -93,16 +93,16 @@
                   <h2 class="popover-title">Личный кабинет</h2>
                   <input class="popover-field" type="email" name="subscription-email" id="subscription-email"
                     placeholder="email@example.com">
-                  <input class="popover-field" type="password">
+                  <input class="popover-field" type="password" value="password">
                   <div class="popover-container-link">
-                  <button class="cart-item-button button button-pink" type="submit" >
-                    <span class="cart-button-text">Войти</span>
-                  </button>
-                  <div class="popover-wrapper-link">
-                  <a href="#" class="popover-link">Забыли пароль?</a>
-                  <a href="#" class="popover-link">Регистрация</a>
-                </div>
-                </div>
+                    <button class="button button-pink" type="submit">
+                      <span class="cart-button-text">Войти</span>
+                    </button>
+                    <div class="popover-wrapper-link">
+                      <a href="#" class="popover-link">Забыли пароль?</a>
+                      <a href="#" class="popover-link">Регистрация</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </li>
@@ -177,7 +177,7 @@
             <fieldset class="sort catalog-filter-group">
               <legend class="customize-form-title">Сортировка:</legend>
               <select class="customize-form" name="sort">
-                <option class="customize-form-text" value="popular" selected>по попурярности</option>
+                <option class="customize-form-text" value="popular" selected>по популярности</option>
                 <option class="customize-form-text" value="cheap">сначала недорогие</option>
                 <option class="customize-form-text" value="expensive">сначала дорогие</option>
                 <option class="customize-form-text" value="by-fatness">по жирности</option>
@@ -187,17 +187,16 @@
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <legend class="range-price">Цена:</legend>
-                  <div class="range-price"></div>
                   <label class="catalog-filter-label">
-                    <input class="range-input" type="text" value="100" name="price-from">₽ –
+                    <input class="range-input" type="text" value="100" name="price-from"> ₽ –&nbsp;
                   </label>
                   <label class="catalog-filter-label">
-                    <input class="range-input" type="text" value="500" name="price-to">₽
+                    <input class="range-input" type="text" value="500" name="price-to"> ₽
                   </label>
                 </div>
                 <div class="range-container">
                   <div class="range-scale">
-                    <div class="range-ice" style="left: 24px; width: 68px">
+                    <div class="range-ice" style="left: 30px; width: 68px">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -324,7 +323,7 @@
                 <h3 class="assortment-name">
                   <a class="assorment-link" href="catalog.html">Черника</a>
                 </h3>
-                <p class="assortment-text">Крем-брюле с черничным джемом</p>
+                <p class="assortment-text">Крем-брюле<br> с черничным джемом</p>
                 <div class="assortment-wrraper">
                   <p class="assortment-price">330 ₽/кг</p>
                   <a class="assortment-button" href="#">
@@ -346,7 +345,7 @@
                 <h3 class="assortment-name">
                   <a class="assorment-link" href="catalog.html">Бабл-гам</a>
                 </h3>
-                <p class="assortment-text">Ванильный пломбир со сладкой посыпкой</p>
+                <p class="assortment-text">Ванильный пломбир<br> со сладкой посыпкой</p>
                 <div class="assortment-wrraper">
                   <p class="assortment-price">320 ₽/кг</p>
                   <a class="assortment-button" href="#">
@@ -390,7 +389,7 @@
                 <h3 class="assortment-name">
                   <a class="assorment-link" href="catalog.html">Банан</a>
                 </h3>
-                <p class="assortment-text">Сливочный пломбир с банановым вкусом</p>
+                <p class="assortment-text">Сливочный пломбир<br> с банановым вкусом</p>
                 <div class="assortment-wrraper">
                   <p class="assortment-price">340 ₽/кг</p>
                   <a class="assortment-button" href="#">
@@ -434,7 +433,7 @@
                 <h3 class="assortment-name">
                   <a class="assorment-link" href="catalog.html">Клубничка</a>
                 </h3>
-                <p class="assortment-text">Сливочный пломбир с клубничным вкусом</p>
+                <p class="assortment-text">Сливочный пломбир<br> с клубничным вкусом</p>
                 <div class="assortment-wrraper">
                   <p class="assortment-price">300 ₽/кг</p>
                   <a class="assortment-button" href="#">
@@ -478,7 +477,7 @@
                 <h3 class="assortment-name">
                   <a class="assorment-link" href="catalog.html">Ментол</a>
                 </h3>
-                <p class="assortment-text">Сливочный пломбир с ментоловым сиропом</p>
+                <p class="assortment-text">Сливочный пломбир<br> с ментоловым сиропом</p>
                 <div class="assortment-wrraper">
                   <p class="assortment-price">320 ₽/кг</p>
                   <a class="assortment-button" href="#">
@@ -539,7 +538,7 @@
             </li>
           </ul>
           <div class="pagination-container">
-            <button class="button pagination-show-more button-state" type="button">Показать ещё</button>
+            <button class="button pagination-show-more button-state" type="button">Показать еще</button>
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-prev pagination-disabled">
@@ -570,7 +569,7 @@
           </div>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer-catalog">
         <ul class="footer-social-list list">
           <li class="footer-social-link">
             <a class="social-button social-butoon-telegram" href="https://t.me/htmlacademy">
