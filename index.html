@@ -88,21 +88,22 @@
                 <span class="navigation-text">Вход</span>
               </a>
               <div class="popover popover-login">
-                <div class="popover-content">
+                <form class="popover-content" action="#" method="post">
                   <h2 class="popover-title">Личный кабинет</h2>
                   <input class="popover-field" type="email" name="subscription-email" id="subscription-email"
                     placeholder="email@example.com">
                   <input class="popover-field" type="password" value="password">
                   <div class="popover-container-link">
+                    <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
                     <button class="button button-pink" type="submit">
-                      <span class="cart-button-text">Войти</span>
+                      <span class="cart-button-text button-text">Войти</span>
                     </button>
                     <div class="popover-wrapper-link">
                       <a href="#" class="popover-link">Забыли пароль?</a>
                       <a href="#" class="popover-link">Регистрация</a>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </li>
             <li class="navigation-item-info navigation-item-basket">
@@ -168,7 +169,12 @@
                 <p class="slide-text slide-text-pink">Натуральное мороженое из свежих сливок<br> и молока с вкуснейшим
                   клубничным
                   джемом –<br> это идеальный десерт для всей семьи.</p>
-                <a class=" button slide-button-order button-state" href="#">Заказать</a>
+                <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+                <a class=" button slide-button-order button-state" href="#">
+                  <span class="button-text">
+                    Заказать
+                  </span>
+                </a>
               </div>
               <div class="slide-container-image">
                 <button class="slide-button slide-button-left" type="button">
@@ -192,15 +198,17 @@
                   </svg>
                 </button>
               </div>
-              <div class="slide-mini-image">
-                <span class="slide-wrapper-mini-image"></span>
-                <img class="slide-image-banan" src="images/slider/mini-banan.png" alt="Мини-банан" width="66"
-                  height="150">
-              </div>
-              <div class="slide-mini-image">
-                <span class="slide-wrapper-mini-image"></span>
-                <img class="slide-image-marshmallow" src="images/slider/mini-marshmallow.png" alt="Мини-маршмеллоу"
-                  width="66" height="150">
+              <div class="slide-container-mini">
+                <div class="slide-mini-image">
+                  <span class="slide-wrapper-mini-image"></span>
+                  <img class="slide-image-banan" src="images/slider/mini-banan.png" alt="Мини-банан" width="66"
+                    height="150">
+                </div>
+                <div class="slide-mini-image">
+                  <span class="slide-wrapper-mini-image"></span>
+                  <img class="slide-image-marshmallow" src="images/slider/mini-marshmallow.png" alt="Мини-маршмеллоу"
+                    width="66" height="150">
+                </div>
               </div>
             </li>
             <li class="slide-item">
@@ -210,7 +218,12 @@
                   свежесть
                   и
                   наслаждение<br> даже в самый жаркий летний день.</p>
-                <a class=" button slide-button-order button-state" href="#">Заказать</a>
+                <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+                <a class=" button slide-button-order button-state" href="#">
+                  <span class="button-text">
+                    Заказать
+                  </span>
+                </a>
               </div>
               <div class="slide-container-image">
                 <button class="slide-button slide-button-left" type="button">
@@ -251,7 +264,12 @@
                 <p class="slide-text slide-text-pink">Необычный сладкий десерт с карамельным<br> топпингом и кусочками
                   зефира
                   завоюет <br>сердца сладкоежек всех возрастов.</p>
-                <a class=" button slide-button-order button-state" href="#">Заказать</a>
+                <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+                <a class=" button slide-button-order button-state" href="#">
+                  <span class="button-text">
+                    Заказать
+                  </span>
+                </a>
               </div>
               <div class="slide-container-image">
                 <button class="slide-button" type="button">
@@ -344,7 +362,12 @@
                 <p class="banner-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
                   малинового
                   варенья бесплатно.</p>
-                <a class="button banner-button button-state" href="#">Хочу подарок</a>
+                <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+                <a class="button banner-button button-state" href="#">
+                  <span class="button-text">
+                    Хочу подарок
+                  </span>
+                </a>
               </div>
               <img class="banner-image" src="images/raspberry.png" alt="Малинка" width="219" height="268">
             </li>
@@ -354,7 +377,12 @@
                 <p class="banner-text">При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных зефирок
                   совершенно
                   бесплатно.</p>
-                <a class="button banner-button button-state" href="#">Хочу подарок</a>
+                <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+                <a class="button banner-button button-state" href="#">
+                  <span class="button-text">
+                    Хочу подарок
+                  </span>
+                </a>
               </div>
               <img class="banner-image" src="images/marshmallow.png" alt="Маршмеллоу" width="219" height="268">
             </li>
@@ -372,7 +400,7 @@
                 </h3>
                 <p class="assortment-text">Сливочное мороженое с малиновым джемом</p>
                 <div class="assortment-wrraper">
-                  <p class="assortment-price">310 ₽/&nbsp;кг</p>
+                  <p class="assortment-price">310 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
                     <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -394,7 +422,7 @@
                 </h3>
                 <p class="assortment-text">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="assortment-wrraper">
-                  <p class="assortment-price">340 ₽/&nbsp;кг</p>
+                  <p class="assortment-price">340 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
                     <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +444,7 @@
                 </h3>
                 <p class="assortment-text">Крем-брюле<br> с черничным джемом</p>
                 <div class="assortment-wrraper">
-                  <p class="assortment-price">330 ₽/&nbsp;кг</p>
+                  <p class="assortment-price">330 ₽/кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
                     <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -494,7 +522,12 @@
                 вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <input class="email-field" type="email" name="subscription-email" id="subscription-email"
                 placeholder="email@example.com">
-              <button class="button subscription-button button-pink" type="submit">Отправить</button>
+              <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+              <button class="button subscription-button button-pink" type="submit">
+                <span class="button-text">
+                  Отправить
+                </span>
+              </button>
             </form>
           </div>
         </section>
@@ -514,13 +547,15 @@
                   <label class="form-label" for="appointment-date">Дата</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                        viewBox="0 0 14 14">
                         <path fill="currentColor" fill-rule="evenodd"
                           d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z"
                           clip-rule="evenodd" />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и
+                      мы свяжемся с вами, чтобы подтвердить заказ</span>
                   </span>
                 </span>
                 <button class="info">
@@ -536,25 +571,32 @@
               </div>
               <div class="field-group appointment-form-address">
                 <span class="form-label">
-                <label class="form-label" for="appointment-address">Адрес</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
-                      <path fill="currentColor" fill-rule="evenodd"
-                        d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z"
-                        clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</span>
+                  <label class="form-label" for="appointment-address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                        viewBox="0 0 14 14">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и
+                      мы свяжемся с вами, чтобы подтвердить заказ</span>
+                  </span>
                 </span>
-              </span>
                 <button class="info">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
                 <input class="appointment-info appointment-address" type="text" id="appointment-address"
                   name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
               </div>
-              <button class="button appointment-button button-pink" type="submit">Отправить</button>
+              <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+              <button class="button appointment-button button-pink" type="submit">
+                <span class="button-text">
+                  Отправить
+                </span>
+              </button>
             </form>
           </div>
         </section>
@@ -568,7 +610,12 @@
               <a class="information-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
               <p class="information-time">(с 10 до 20 ежедневно)</p>
             </address>
-            <button class="button information-button button-pink" type="submit">Форма обратной связи</button>
+            <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+            <button class="button information-button button-pink" type="submit">
+              <span class="button-text">
+                Форма обратной связи
+              </span>
+            </button>
           </div>
         </section>
       </main>
