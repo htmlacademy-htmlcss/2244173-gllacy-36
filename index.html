@@ -372,7 +372,7 @@
                 </h3>
                 <p class="assortment-text">Сливочное мороженое с малиновым джемом</p>
                 <div class="assortment-wrraper">
-                  <p class="assortment-price">310 ₽/кг</p>
+                  <p class="assortment-price">310 ₽/&nbsp;кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
                     <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -394,7 +394,7 @@
                 </h3>
                 <p class="assortment-text">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="assortment-wrraper">
-                  <p class="assortment-price">340 ₽/кг</p>
+                  <p class="assortment-price">340 ₽/&nbsp;кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
                     <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +416,7 @@
                 </h3>
                 <p class="assortment-text">Крем-брюле<br> с черничным джемом</p>
                 <div class="assortment-wrraper">
-                  <p class="assortment-price">330 ₽/кг</p>
+                  <p class="assortment-price">330 ₽/&nbsp;кг</p>
                   <a class="assortment-button" href="#">
                     <span class="visually-hidden">Корзина</span>
                     <svg class="assortment-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -510,7 +510,19 @@
             </p>
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="field-group appointment-form-date">
-                <label class="form-label" for="appointment-date">Дата</label>
+                <span class="form-label">
+                  <label class="form-label" for="appointment-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                        <path fill="currentColor" fill-rule="evenodd"
+                          d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</span>
+                  </span>
+                </span>
                 <button class="info">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
@@ -523,7 +535,19 @@
                   name="appointment-phone" placeholder="+7 800 999-00-00">
               </div>
               <div class="field-group appointment-form-address">
+                <span class="form-label">
                 <label class="form-label" for="appointment-address">Адрес</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
+                      <path fill="currentColor" fill-rule="evenodd"
+                        d="M7 2.1A4.9 4.9 0 1 0 7 12 4.9 4.9 0 0 0 7 2ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.3c.4 0 .7.3.7.7v2.2a.7.7 0 0 1-1.4 0V7c0-.4.3-.7.7-.7Zm0-2.2a.7.7 0 0 0 0 1.3.7.7 0 0 0 0-1.3Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ</span>
+                </span>
+              </span>
                 <button class="info">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
@@ -621,8 +645,8 @@
               </p>
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-password">Пароль</label>
-                <input class="popover-field modal-field field" type="email" name="subscription-email"
-                  id="auth-password" placeholder="email@example.com">
+                <input class="popover-field modal-field field" type="email" name="subscription-email" id="auth-password"
+                  placeholder="email@example.com">
               </p>
               <p class="field-group modal-group">
                 <label for="" class="visually-hidden"></label>

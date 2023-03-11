@@ -113,7 +113,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  width: 575px;
 }
 
 .navigation-link {
@@ -127,11 +127,16 @@ body {
 
 .navigation-link-catalog {
   display: flex;
-  gap: 10px;
+  gap: 11px;
 }
 
 .navigation-list-right {
   width: 431px;
+  display: flex;
+}
+
+.navigation-item-info:not(:last-child) {
+  margin-right: 16px;
 }
 
 .navigation-link-phone {
@@ -447,12 +452,13 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 85px;
-  margin-top: 10px;
+  margin-top: 9px;
   flex-wrap: wrap;
 }
 
 .slide-header {
   padding-left: 70px;
+  margin-top: 26px;
 }
 
 .slide-item {
@@ -471,14 +477,14 @@ body {
   line-height: 46px;
   width: 470px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .slide-text {
   display: block;
   margin: 0;
   font-size: 18px;
-  margin-bottom: 46px;
+  margin-bottom: 41px;
 }
 
 .slider-controls {
@@ -498,6 +504,7 @@ body {
   position: relative;
   left: 5px;
   top: 12px;
+  width: 327px;
 }
 
 
@@ -643,9 +650,8 @@ body {
 
 .slide-button-order {
   background-color: #fcfcfc;
-  top: 13px;
-  left: -4px;
-  position: relative;
+  display: inline-block;
+  padding-left: 29px;
 }
 
 .social-button {
@@ -760,6 +766,8 @@ body {
 .banner-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .banner-item {
@@ -933,7 +941,7 @@ body {
   border-radius: 16px;
   padding: 24px;
   background-size: cover;
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .advantages-container {
@@ -955,7 +963,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 40px 40px;
-  padding-bottom: 49px;
+  padding-bottom: 47px;
 }
 
 .advantages-item {
@@ -977,9 +985,9 @@ body {
   border-radius: 100%;
   position: absolute;
   display: block;
-  width: 46px;
-  height: 46px;
-  right: 457px;
+  width: 44px;
+  height: 44px;
+  right: 456px;
   top: -1px;
 }
 
@@ -1015,8 +1023,6 @@ body {
   background-size: 655px;
   background-repeat: no-repeat;
   border-radius: 16px;
-  padding-left: 32px;
-  margin-right: 31px;
   width: 570px;
   background-position-x: -10px;
   background-position-y: -106px;
@@ -1029,6 +1035,8 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .last-news-note {
@@ -1037,6 +1045,7 @@ body {
   color: #565c66;
   margin: 0;
   margin-bottom: 14px;
+  padding-left: 32px;
 }
 
 .last-news-title {
@@ -1047,6 +1056,8 @@ body {
   line-height: 30px;
   text-decoration: none;
   color: #2d3440;
+  padding-left: 32px;
+  margin-bottom: 68px;
 }
 
 /* end last-news */
@@ -1088,7 +1099,7 @@ body {
   padding-left: 16px;
   font-size: 16px;
   line-height: 20px;
-  margin: 0 0 29px 26px;
+  margin: 0 0 27px 26px;
 }
 
 .subscription-button {
@@ -1136,7 +1147,7 @@ body {
   display: block;
   width: 371px;
   line-height: 22px;
-  padding-bottom: 145px;
+  padding-bottom: 147px;
   margin-right: 135px;
   color: #565c66;
 }
@@ -1189,19 +1200,60 @@ body {
   position: relative;
 }
 
-.appointment-form-date::after {
-  content: "";
-  background-image: url("../images/info.svg");
-  background-repeat: no-repeat;
-  width: 13px;
-  height: 13px;
-  position: absolute;
-  left: 44px;
-  top: 3px;
-}
 
 .form-label {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #fcfcfc;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #fcfcfc;
+  color: #565c66;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 8px 10px;
+  border-radius: 1px;
+  width: 165px;
+  position: absolute;
+  margin-top: -24px;
+  margin-left: 23px;
+  border: 2px solid rgba(173, 152, 143, 0.18);
+  z-index: 1;
+  display: none;
+}
+
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #ffcbd8;
 }
 
 .field-group {
@@ -1229,18 +1281,7 @@ body {
 .appointment-button {
   grid-column: 1/-1;
   justify-self: center;
-  margin-top: 30px;
-}
-
-.appointment-form-address::after {
-  content: "";
-  background-image: url("../images/info.svg");
-  background-repeat: no-repeat;
-  width: 13px;
-  height: 13px;
-  position: absolute;
-  left: 56px;
-  top: 2px;
+  margin-top: 29px;
 }
 
 /* end contacts */
@@ -1254,7 +1295,7 @@ body {
   background-size: cover;
   border-radius: 16px;
   padding: 64px;
-  background-position-y: -81px;
+  background-position-y: -84px;
 }
 
 .information-wrapper {
@@ -1270,7 +1311,7 @@ body {
   width: 179px;
   line-height: 22px;
   margin: 0;
-  padding-top: 43px;
+  padding-top: 40px;
 }
 
 
@@ -1312,7 +1353,7 @@ body {
 }
 
 .information-button {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   margin-left: -3px;
 }
 
@@ -1340,9 +1381,13 @@ body {
 .footer-nav-list {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  margin-bottom: 17px;
-  margin-top: 2px;
+  width: 380px;
+  margin-bottom: 15px;
+}
+
+.footer-nav-item:nth-child(2n+1) {
+  text-align: center;
+  margin-left: -1px;
 }
 
 .footer-social-link:not(:last-child) {
@@ -1371,6 +1416,7 @@ body {
 
 .footer-nav-link_heart {
   font-weight: 700;
+  margin-left: 14px;
 }
 
 .footer-nav-item-heart::before {
@@ -1379,7 +1425,7 @@ body {
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  left: -24px;
+  left: 15px;
   top: 2px;
   content: "";
 }
@@ -1388,7 +1434,6 @@ body {
 width: 93px;
 display: block;
 margin-left: 8px;
-margin-top: 2px;
 }
 
 .developer:hover {
