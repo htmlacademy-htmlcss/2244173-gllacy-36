@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" href="favicons/favicon.ico">
   </head>
 
   <body>
@@ -14,14 +13,14 @@
       <header class="page-header">
         <nav class="navigation">
           <ul class="navigation-list list navigation-list-left">
-            <li class="navigation-item">
+            <li lass="navigation-item">
               <a class="header-logo" href="index.html">
                 <img class="header-images" src="images/logo-gllacy.png" alt="Логотип" width="137" height="56">
               </a>
             </li>
             <li class="navigation-item navigation-item-current">
               <!-- Для того, чтобы появилось состояние, когда открывается поповер нужно добавить класс navigation-link-open-->
-              <a class="navigation-link navigation-link-catalog" href="catalog.html">
+              <a class="navigation-link navigation-link-catalog" href="#">
                 <span class="navigation-menu-text">Каталог</span>
                 <svg class="navigation-arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="12" height="7" fill="none" viewBox="0 0 12 7">
@@ -72,7 +71,7 @@
               </a>
               <div class="popover popover-search">
                 <div class="popover-content">
-                  <input class="popover-input text-state" type="search" placeholder="Поиск по сайту">
+                  <input class="popover-input" type="search" placeholder="Поиск по сайту">
                 </div>
               </div>
             </li>
@@ -91,11 +90,11 @@
               <div class="popover popover-login">
                 <h2 class="popover-title">Личный кабинет</h2>
                 <form class="popover-content" action="https://echo.htmlacademy.ru." method="post">
-                  <label class="visually-hidden" for="popover-email">email</label>
-                  <input class="popover-field popover-email text-state" type="email" name="popover-email"
-                    id="popover-email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="subscription-email">email</label>
+                  <input class="popover-field popover-email" type="email" name="subscription-email"
+                    id="subscription-email" placeholder="email@example.com">
                   <label class="visually-hidden" for="popover-password">Пароль</label>
-                  <input class="popover-field text-state" type="password" id="popover-password" name="popover-password"
+                  <input class="popover-field" type="password" id="popover-password" name="popover-password"
                     value="password">
                   <div class="popover-container-link">
                     <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
@@ -234,8 +233,8 @@
                   </span>
                 </a>
               </div>
-              <div class="slide-container-image slide-container-image-2">
-                <button class="slide-button slide-button-left-2" type="button">
+              <div class="slide-container-image">
+                <button class="slide-button slide-button-left" type="button">
                   <span class="visually-hidden">arrow 1</span>
                   <svg class="slide-icone slide-icone-left" aria-hidden="true" focusable="false"
                     xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
@@ -244,9 +243,9 @@
                       clip-rule="evenodd" />
                   </svg>
                 </button>
-                <span class="slide-wrapper-image slide-wrapper-image-2"></span>
+                <span class="slide-wrapper-image"></span>
                 <img class="slide-image" src="images/slider/big-banan.png" alt="Банан" width="312" height="507">
-                <button class="slide-button slide-button-right-2" type="button">
+                <button class="slide-button slide-button-right" type="button">
                   <span class="visually-hidden">arrow 2</span>
                   <svg class="slide-icone slide-icone-right" aria-hidden="true" focusable="false"
                     xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
@@ -267,7 +266,7 @@
                   width="66" height="150">
               </div>
             </li>
-            <li class="slide-item slide-3">
+            <li class="slide-item">
               <div class="slide-header">
                 <h2 class="slide-title">Карамельный пломбир<br> с маршмеллоу</h2>
                 <p class="slide-text slide-text-pink">Необычный сладкий десерт с карамельным<br> топпингом и кусочками
@@ -280,8 +279,8 @@
                   </span>
                 </a>
               </div>
-              <div class="slide-container-image slide-container-image-2">
-                <button class="slide-button slide-button-left-2" type="button">
+              <div class="slide-container-image">
+                <button class="slide-button" type="button">
                   <span class="visually-hidden">arrow 1</span>
                   <svg class="slide-icone slide-icone-left" aria-hidden="true" focusable="false"
                     xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
@@ -290,10 +289,10 @@
                       clip-rule="evenodd" />
                   </svg>
                 </button>
-                <span class="slide-wrapper-image slide-wrapper-image-2"></span>
+                <span class="slide-wrapper-image"></span>
                 <img class="slide-image" src="images/slider/big-marshmallow.png" alt="Маршмеллоу" width="312"
                   height="507">
-                <button class="slide-button slide-button-right-2" type="button">
+                <button class="slide-button" type="button">
                   <span class="visually-hidden">arrow 2</span>
                   <svg class="slide-icone slide-icone-right" aria-hidden="true" focusable="false"
                     xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
@@ -405,7 +404,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assortment-link" href="catalog.html">Малинка</a>
+                  <a class="assorment-link" href="catalog.html">Малинка</a>
                 </h3>
                 <p class="assortment-text">Сливочное мороженое с малиновым джемом</p>
                 <div class="assortment-wrraper">
@@ -427,7 +426,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assortment-link" href="catalog.html">Фисташка</a>
+                  <a class="assorment-link" href="catalog.html">Фисташка</a>
                 </h3>
                 <p class="assortment-text">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="assortment-wrraper">
@@ -449,7 +448,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assortment-link" href="catalog.html">Черника</a>
+                  <a class="assorment-link" href="catalog.html">Черника</a>
                 </h3>
                 <p class="assortment-text">Крем-брюле<br> с черничным джемом</p>
                 <div class="assortment-wrraper">
@@ -471,7 +470,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assortment-link" href="catalog.html">Бабл-гам</a>
+                  <a class="assorment-link" href="catalog.html">Бабл-гам</a>
                 </h3>
                 <p class="assortment-text">Ванильный пломбир<br> со сладкой посыпкой</p>
                 <div class="assortment-wrraper">
@@ -529,7 +528,7 @@
             <form class="subscription-menu" action="https://echo.htmlacademy.ru." method="post">
               <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда<br> в курсе всего самого
                 вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <input class="email-field text-state" type="email" name="subscription-email" id="subscription-email"
+              <input class="email-field" type="email" name="subscription-email" id="subscription-email"
                 placeholder="email@example.com">
               <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
               <button class="button subscription-button button-pink" type="submit">
@@ -570,19 +569,19 @@
                 <button class="info">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
-                <input class="appointment-info appointment-date text-state" type="text" id="appointment-date"
+                <input class="appointment-info appointment-date" type="text" id="appointment-date"
                   name="appointment-date" placeholder="01.04.2020">
               </div>
               <div class="field-group appointment-form-phone">
                 <label class="form-label" for="appointment-phone">Телефон</label>
-                <input class="appointment-info appointment-phone text-state" type="tel" id="appointment-phone"
+                <input class="appointment-info appointment-phone" type="tel" id="appointment-phone"
                   name="appointment-phone" placeholder="+7 800 999-00-00">
               </div>
               <div class="field-group appointment-form-address">
                 <span class="form-label">
                   <label class="form-label" for="appointment-address">Адрес</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                       <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
                         viewBox="0 0 14 14">
                         <path fill="currentColor" fill-rule="evenodd"
@@ -590,14 +589,14 @@
                           clip-rule="evenodd" />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Укажите адрес и дату доставки, и
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите адрес и дату доставки, и
                       мы свяжемся с вами, чтобы подтвердить заказ</span>
                   </span>
                 </span>
                 <button class="info">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
-                <input class="appointment-info appointment-address text-state" type="text" id="appointment-address"
+                <input class="appointment-info appointment-address" type="text" id="appointment-address"
                   name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
               </div>
               <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
@@ -696,17 +695,17 @@
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-login">Имя и фамилия</label>
-                <input class="popover-field modal-field field text-state" type="text" id="auth-login" name="auth-login"
+                <input class="popover-field modal-field field" type="text" id="auth-login" name="auth-login"
                   placeholder="Имя и фамилия">
               </p>
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-password">Пароль</label>
-                <input class="popover-field modal-field field text-state" type="email" name="subscription-email" id="auth-password"
+                <input class="popover-field modal-field field" type="email" name="subscription-email" id="auth-password"
                   placeholder="email@example.com">
               </p>
               <p class="field-group modal-group">
-                <label class="visually-hidden" for="comment-field">Комментарий</label>
-                <textarea class="popover-field modal-field field text-state" name="comment" id="comment-field"
+                <label for="" class="visually-hidden"></label>
+                <textarea class="popover-field modal-field field" name="comment" id="comment-field"
                   placeholder="В свободной форме" rows="5" cols="15"></textarea>
               </p>
               <button class="button modal-button button-pink" type="submit">Отправить</button>

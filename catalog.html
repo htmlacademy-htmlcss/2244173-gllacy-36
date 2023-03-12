@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicons/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <title>Каталог</title>
   </head>
 
@@ -15,14 +16,14 @@
       <header class="page-header">
         <nav class="navigation">
           <ul class="navigation-list list navigation-list-left">
-            <li lass="navigation-item">
+            <li class="navigation-item">
               <a class="header-logo" href="index.html">
                 <img class="header-images" src="images/logo-gllacy.png" alt="Логотип" width="137" height="56">
               </a>
             </li>
             <li class="navigation-item navigation-item-current">
               <!-- Для того, чтобы появилось состояние, когда открывается поповер нужно добавить класс navigation-link-open-->
-              <a class="navigation-link navigation-link-catalog" href="#">
+              <a class="navigation-link navigation-link-catalog" href="catalog.html">
                 <span class="navigation-menu-text">Каталог</span>
                 <svg class="navigation-arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="12" height="7" fill="none" viewBox="0 0 12 7">
@@ -33,7 +34,7 @@
               </a>
               <ul class="popover sub-menu list">
                 <li class="subnav-item subnav-item-bold">
-                  <a class="subnav-link" href="#">Новинки</a>
+                  <a class="subnav-link-bold" href="#">Новинки</a>
                 </li>
                 <li class="subnav-item">
                   <a class="subnav-link" href="#">Сливочное</a>
@@ -42,7 +43,7 @@
                   <a class="subnav-link subnav-link-current" href="#">Щербеты</a>
                 </li>
                 <li class="subnav-item">
-                  <a class="subnav-link" href="#">Фруктовый лёд</a>
+                  <a class="subnav-link" href="#">Фруктовый лед</a>
                 </li>
                 <li class="subnav-item">
                   <a class="subnav-link" href="#">Мелорин</a>
@@ -73,7 +74,7 @@
               </a>
               <div class="popover popover-search">
                 <div class="popover-content">
-                  <input class="popover-input" type="search" placeholder="Поиск по сайту">
+                  <input class="popover-input text-state" type="search" placeholder="Поиск по сайту">
                 </div>
               </div>
             </li>
@@ -90,21 +91,25 @@
                 <span class="navigation-text">Вход</span>
               </a>
               <div class="popover popover-login">
-                <div class="popover-content">
-                  <h2 class="popover-title">Личный кабинет</h2>
-                  <input class="popover-field" type="email" name="subscription-email" id="subscription-email"
-                    placeholder="email@example.com">
-                  <input class="popover-field" type="password" value="password">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form class="popover-content" action="https://echo.htmlacademy.ru." method="post">
+                  <label class="visually-hidden" for="subscription-email">email</label>
+                  <input class="popover-field popover-email text-state" type="email" name="subscription-email"
+                    id="subscription-email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="popover-password">Пароль</label>
+                  <input class="popover-field text-state" type="password" id="popover-password" name="popover-password"
+                    value="password">
                   <div class="popover-container-link">
+                    <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
                     <button class="button button-pink" type="submit">
-                      <span class="cart-button-text">Войти</span>
+                      <span class="cart-button-text button-text">Войти</span>
                     </button>
                     <div class="popover-wrapper-link">
                       <a href="#" class="popover-link">Забыли пароль?</a>
                       <a href="#" class="popover-link">Регистрация</a>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </li>
             <li class="navigation-item-info navigation-item-basket">
@@ -149,12 +154,17 @@
                     </li>
                   </ul>
                   <div class="cart-container">
-                    <button type="button" class="cart-item-button button button-pink">
+                    <button class="cart-item-button button button-pink" type="button">
                       <span class="cart-button-text">Оформить заказ</span>
                     </button>
                     <span class="cart-total">Итого: 790 ₽</span>
                   </div>
                 </div>
+              </div>
+              <div class="popover popover-cart-empty">
+                <h2 class="popover-text-empty">
+                  Ваша корзина пока пуста
+                </h2>
               </div>
             </li>
           </ul>
@@ -163,7 +173,7 @@
       <main class="main-container main-inner">
         <ul class="breadcrums-list list">
           <li class="breadcrums-item">
-            <a href="index.html" class="breadcrums-link">Главная</a>
+            <a class="breadcrums-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrums-item">
             <a class="breadcrums-link" href="catalog.html">Каталог</a>
@@ -185,26 +195,24 @@
               </select>
             </fieldset>
             <fieldset class="catalog-range catalog-filter-group">
-              <div class="range">
-                <div class="range-wrapper-inputs">
-                  <legend class="range-price">Цена:</legend>
-                  <label class="catalog-filter-label">
-                    <input class="range-input" type="text" value="100" name="price-from"> ₽ –&nbsp;
-                  </label>
-                  <label class="catalog-filter-label">
-                    <input class="range-input" type="text" value="500" name="price-to"> ₽
-                  </label>
-                </div>
-                <div class="range-container">
-                  <div class="range-scale">
-                    <div class="range-ice" style="left: 30px; width: 68px">
-                      <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
-                    </div>
+              <legend class="range-price">Цена:</legend>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="text" value="100" name="price-from"> ₽ –&nbsp;
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="text" value="500" name="price-to"> ₽
+                </label>
+              </div>
+              <div class="range-container">
+                <div class="range-scale">
+                  <div class="range-ice" style="left: 30px; width: 68px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -278,7 +286,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Малинка</a>
+                  <a class="assortment-link" href="catalog.html">Малинка</a>
                 </h3>
                 <p class="assortment-text">Сливочное мороженое с малиновым джемом</p>
                 <div class="assortment-wrraper">
@@ -300,7 +308,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Фисташка</a>
+                  <a class="assortment-link" href="catalog.html">Фисташка</a>
                 </h3>
                 <p class="assortment-text">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="assortment-wrraper">
@@ -322,7 +330,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Черника</a>
+                  <a class="assortment-link" href="catalog.html">Черника</a>
                 </h3>
                 <p class="assortment-text">Крем-брюле<br> с черничным джемом</p>
                 <div class="assortment-wrraper">
@@ -344,7 +352,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Бабл-гам</a>
+                  <a class="assortment-link" href="catalog.html">Бабл-гам</a>
                 </h3>
                 <p class="assortment-text">Ванильный пломбир<br> со сладкой посыпкой</p>
                 <div class="assortment-wrraper">
@@ -366,7 +374,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Ежевика</a>
+                  <a class="assortment-link" href="catalog.html">Ежевика</a>
                 </h3>
                 <p class="assortment-text">Сливочное мороженое с ежевичным джемом</p>
                 <div class="assortment-wrraper">
@@ -388,7 +396,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Банан</a>
+                  <a class="assortment-link" href="catalog.html">Банан</a>
                 </h3>
                 <p class="assortment-text">Сливочный пломбир<br> с банановым вкусом</p>
                 <div class="assortment-wrraper">
@@ -410,7 +418,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Шоколадка</a>
+                  <a class="assortment-link" href="catalog.html">Шоколадка</a>
                 </h3>
                 <p class="assortment-text">Классический шоколадный пломбир</p>
                 <div class="assortment-wrraper">
@@ -432,7 +440,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Клубничка</a>
+                  <a class="assortment-link" href="catalog.html">Клубничка</a>
                 </h3>
                 <p class="assortment-text">Сливочный пломбир<br> с клубничным вкусом</p>
                 <div class="assortment-wrraper">
@@ -454,7 +462,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Лимон</a>
+                  <a class="assortment-link" href="catalog.html">Лимон</a>
                 </h3>
                 <p class="assortment-text">Освежающий лимонный сорбет</p>
                 <div class="assortment-wrraper">
@@ -476,7 +484,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Ментол</a>
+                  <a class="assortment-link" href="catalog.html">Ментол</a>
                 </h3>
                 <p class="assortment-text">Сливочный пломбир<br> с ментоловым сиропом</p>
                 <div class="assortment-wrraper">
@@ -498,7 +506,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Орешек</a>
+                  <a class="assortment-link" href="catalog.html">Орешек</a>
                 </h3>
                 <p class="assortment-text">Фисташковый пломбир с шоколадным сиропом</p>
                 <div class="assortment-wrraper">
@@ -520,7 +528,7 @@
                 height="168">
               <div class="assortment-content">
                 <h3 class="assortment-name">
-                  <a class="assorment-link" href="catalog.html">Крем-брюле</a>
+                  <a class="assortment-link" href="catalog.html">Крем-брюле</a>
                 </h3>
                 <p class="assortment-text">Классическое <br>крем-брюле</p>
                 <div class="assortment-wrraper">
@@ -539,7 +547,12 @@
             </li>
           </ul>
           <div class="pagination-container">
-            <button class="button pagination-show-more button-state" type="button">Показать еще</button>
+            <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+            <button class="button pagination-show-more button-state" type="button">
+              <span class="button-text">
+                Показать еще
+              </span>
+            </button>
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-prev pagination-disabled">
