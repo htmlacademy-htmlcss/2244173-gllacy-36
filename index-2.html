@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  </head>
 
   <body class="blue">
     <div class="basic-container">
@@ -95,8 +95,8 @@
                   <input class="popover-field popover-email text-state" type="email" name="popover-email"
                     id="popover-email" placeholder="email@example.com">
                   <label class="visually-hidden" for="popover-password">Пароль</label>
-                  <input class="popover-field popover-field-password text-state" type="password" id="popover-password" name="popover-password"
-                    value="123456">
+                  <input class="popover-field popover-field-password text-state" type="password" id="popover-password"
+                    name="popover-password" value="123456">
                   <div class="popover-container-link">
                     <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
                     <button class="button button-pink" type="submit">
@@ -139,8 +139,8 @@
                       </button>
                     </li>
                     <li class="cart-item">
-                      <img class="cart-image-bubl-gum" src="images/assortment/ice-cream-bablgum.jpg" alt="Бабл-гам." width="46"
-                        height="46">
+                      <img class="cart-image-bubl-gum" src="images/assortment/ice-cream-bablgum.jpg" alt="Бабл-гам."
+                        width="46" height="46">
                       <div class="cart-wrapper">
                         <p class="cart-item-title">Бабл-гам</p>
                         <p class="cart-item-kg">1,5 кг х 320 ₽</p>
@@ -196,7 +196,8 @@
                   </svg>
                 </button>
                 <span class="slide-wrapper-image"></span>
-                <img class="slide-image" src="images/slider/big-strawberry.png" alt="Клубника." width="327" height="507">
+                <img class="slide-image" src="images/slider/big-strawberry.png" alt="Клубника." width="327"
+                  height="507">
                 <button class="slide-button slide-button-right" type="button">
                   <span class="visually-hidden">arrow 2</span>
                   <svg class="slide-icone slide-icone-right" aria-hidden="true" focusable="false"
@@ -256,15 +257,17 @@
                   </svg>
                 </button>
               </div>
-              <div class="slide-mini-image">
-                <span class="slide-wrapper-mini-image"></span>
-                <img class="slide-image" src="images/slider/mini-marshmallow.png" alt="Мини-маршмеллоу." width="66"
-                  height="150">
-              </div>
-              <div class="slide-mini-image">
-                <span class="slide-wrapper-mini-image"></span>
-                <img class="slide-image-marshmallow" src="images/slider/mini-strawberry.png" alt="Мини-клубника."
-                  width="66" height="150">
+              <div class="slide-container-mini-2">
+                <div class="slide-mini-image">
+                  <span class="slide-wrapper-mini-image"></span>
+                  <img class="slide-image" src="images/slider/mini-marshmallow.png" alt="Мини-маршмеллоу." width="66"
+                    height="150">
+                </div>
+                <div class="slide-mini-image">
+                  <span class="slide-wrapper-mini-image"></span>
+                  <img class="slide-image-marshmallow" src="images/slider/mini-strawberry.png" alt="Мини-клубника."
+                    width="66" height="150">
+                </div>
               </div>
             </li>
             <li class="slide-item slide-3">
@@ -303,14 +306,16 @@
                   </svg>
                 </button>
               </div>
-              <div class="slide-mini-image">
-                <span class="slide-wrapper-mini-image"></span>
-                <img class="slide-image" src="images/slider/mini-strawberry.png" alt="Мини-клубника." width="66"
-                  height="150">
-              </div>
-              <div class="slide-mini-image">
-                <span class="slide-wrapper-mini-image"></span>
-                <img class="slide-image" src="images/slider/mini-banan.png" alt="Мини-банан." width="66" height="150">
+              <div class="slide-container-mini">
+                <div class="slide-mini-image">
+                  <span class="slide-wrapper-mini-image"></span>
+                  <img class="slide-image" src="images/slider/mini-strawberry.png" alt="Мини-клубника." width="66"
+                    height="150">
+                </div>
+                <div class="slide-mini-image">
+                  <span class="slide-wrapper-mini-image"></span>
+                  <img class="slide-image" src="images/slider/mini-banan.png" alt="Мини-банан." width="66" height="150">
+                </div>
               </div>
             </li>
           </ul>
@@ -526,18 +531,20 @@
             <p class="last-news-title" href="#">10 способов сервировки фруктовых щербетов<br> к столу</p>
           </article>
           <div class="subscription">
-            <form class="subscription-menu" action="https://echo.htmlacademy.ru." method="post">
+            <div class="subscription-container">
               <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда<br> в курсе всего самого
                 вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <input class="email-field text-state" type="email" name="subscription-email" id="subscription-email"
-                placeholder="email@example.com">
-              <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
-              <button class="button subscription-button button-pink" type="submit">
-                <span class="button-text">
-                  Отправить
-                </span>
-              </button>
-            </form>
+              <form class="subscription-menu" action="https://echo.htmlacademy.ru." method="post">
+                <input class="email-field text-state" type="email" name="subscription-email" id="subscription-email"
+                  placeholder="email@example.com">
+                <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
+                <button class="button subscription-button button-pink" type="submit">
+                  <span class="button-text">
+                    Отправить
+                  </span>
+                </button>
+              </form>
+            </div>
           </div>
         </section>
         <section class="contacts">
@@ -571,12 +578,12 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
                 <input class="appointment-info appointment-date text-state" type="text" id="appointment-date"
-                  name="appointment-date" placeholder="01.04.2020">
+                  name="appointment-date" placeholder="01.04.2020" required>
               </div>
               <div class="field-group appointment-form-phone">
                 <label class="form-label" for="appointment-phone">Телефон</label>
                 <input class="appointment-info appointment-phone text-state" type="tel" id="appointment-phone"
-                  name="appointment-phone" placeholder="+7 800 999-00-00">
+                  name="appointment-phone" placeholder="+7 800 999-00-00" required>
               </div>
               <div class="field-group appointment-form-address">
                 <span class="form-label">
@@ -590,7 +597,8 @@
                           clip-rule="evenodd" />
                       </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Укажите адрес и дату доставки, и
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-address">Укажите адрес и дату доставки,
+                      и
                       мы свяжемся с вами, чтобы подтвердить заказ</span>
                   </span>
                 </span>
@@ -598,7 +606,7 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
                 <input class="appointment-info appointment-address text-state" type="text" id="appointment-address"
-                  name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
+                  name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8" required>
               </div>
               <!--Для того, чтобы появилась анимация загрузки, добавьте класс button-loading-->
               <button class="button appointment-button button-pink" type="submit">
@@ -697,12 +705,12 @@
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-login">Имя и фамилия</label>
                 <input class="popover-field modal-field field text-state" type="text" id="auth-login" name="auth-login"
-                  placeholder="Имя и фамилия">
+                  placeholder="Имя и фамилия" required>
               </p>
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-password">Пароль</label>
-                <input class="popover-field modal-field field text-state" type="email" name="subscription-email" id="auth-password"
-                  placeholder="email@example.com">
+                <input class="popover-field modal-field field text-state" type="email" name="subscription-email"
+                  id="auth-password" placeholder="email@example.com" required>
               </p>
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="comment-field">Комментарий</label>

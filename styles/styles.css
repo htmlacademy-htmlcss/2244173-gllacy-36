@@ -852,6 +852,12 @@ body {
   background-color: #fcdc92;
 }
 
+.slide-container-mini-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 75px;
+}
+
 .slide-container-image-2 {
   margin-left: 17px;
   margin-right: 58px;
@@ -1473,10 +1479,6 @@ body {
   transform: rotate(45deg);
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
-  display: block;
-}
 
 .tooltip-toggle:hover .tooltip-icon {
   color: #ffcbd8;
@@ -2203,8 +2205,12 @@ body {
   width: 16px;
   height: 1px;
   background-color: #000000;
-  right: 1px;
+  right: -2px;
   content: "";
+}
+
+.modal-group input {
+  margin-bottom: 16px;
 }
 
 
@@ -2228,10 +2234,6 @@ body {
   color: #b9b9b9;
 }
 
-.auth-form .field-group {
-  margin: 0;
-  margin-bottom: 16px;
-}
 
 .auth-form .modal-field {
   width: 442px;
@@ -2239,5 +2241,10 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: ;
+}
+
+.modal-button {
+  margin-left: auto;
+  display: flex;
 }
