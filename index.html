@@ -113,7 +113,7 @@
             </li>
             <li class="navigation-item-info navigation-item-basket">
               <!-- Для того, чтобы появилось состояние, когда открывается поповер нужно добавить класс navigation-link-open-->
-              <a class="visually-hidden navigation-link navigation-link-active" href="#">
+              <a class="navigation-link navigation-link-active" href="#">
                 <span class="visually-hidden">Корзина</span>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
@@ -146,7 +146,7 @@
                         <p class="cart-item-title">Бабл-гам</p>
                         <p class="cart-item-kg">1,5 кг х 320 ₽</p>
                       </div>
-                      <p class="cart-item-price">480 ₽</p>
+                      <p class="cart-item-price card-item-price-bg">480 ₽</p>
                       <button class="popover-delete-button" type="button">
                         <span class="visually-hidden">Удалить</span>
                       </button>
@@ -160,7 +160,8 @@
                   </div>
                 </div>
               </div>
-              <a class="navigation-link navigation-link-open" href="#">
+              <!-- Убрать visually-hidden и поставить его в ссылку "2 товара"-->
+              <a class="visually-hidden navigation-link navigation-link-open" href="#">
                 <span class="visually-hidden">Корзина</span>
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
@@ -170,7 +171,7 @@
                 </svg>
                 <span class="navigation-text">Нет товаров</span>
               </a>
-              <div class="popover popover-cart-empty">
+              <div class=" popover popover-cart-empty">
                 <h2 class="popover-text-empty">
                   Ваша корзина пока пуста
                 </h2>
@@ -712,18 +713,18 @@
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-login">Имя и фамилия</label>
-                <input class="popover-field modal-field field text-state" type="text" id="auth-login" name="auth-login"
+                <input class="popover-field-modal modal-field field text-state" type="text" id="auth-login" name="auth-login"
                   placeholder="Имя и фамилия" required>
               </p>
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="auth-password">Пароль</label>
-                <input class="popover-field modal-field field text-state" type="email" name="subscription-email"
+                <input class="popover-field-modal modal-field field text-state" type="email" name="subscription-email"
                   id="auth-password" placeholder="email@example.com" required>
               </p>
               <p class="field-group modal-group">
                 <label class="visually-hidden" for="comment-field">Комментарий</label>
-                <textarea class="popover-field modal-field field text-state" name="comment" id="comment-field"
-                  placeholder="В свободной форме" rows="5" cols="15"></textarea>
+                <textarea class="popover-field-modal modal-field modal-field-textarea field text-state" name="comment" id="comment-field"
+                  placeholder="В свободной форме" rows="6" cols="15"></textarea>
               </p>
               <button class="button modal-button button-pink" type="submit">Отправить</button>
             </form>
