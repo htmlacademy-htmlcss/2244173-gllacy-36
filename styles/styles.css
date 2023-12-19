@@ -307,7 +307,7 @@ body {
   fill: #fcfcfc;
 }
 
-.navigation-drop-down:hover .navigation-link-open {
+.navigation-link-open {
   background-color: #ff4a78;
   color: #fcfcfc;
   border-radius: 30px;
@@ -320,6 +320,14 @@ body {
 .navigation-link-open + .popover-search {
   display: block;
 }
+
+/* .navigation-drop-down.navigation-link-open .popover-search {
+  display: block;
+}
+
+.navigation-drop-down.navigation-link-open .popover-login {
+  display: block;
+} */
 
 .navigation-link-open + .popover-login {
   display: block;
