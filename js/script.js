@@ -16,8 +16,8 @@ document.querySelectorAll(".navigation-button").forEach(button => {
 
 document.body.addEventListener('click', function(event) {
   if (
-    event.currentTarget.classList.contains('navigation-button') == true ||
-    event.currentTarget.classList.contains('popover') == true
+    event.target.classList.contains('navigation-button') == true ||
+    event.target.classList.contains('popover') == true
     ) return
 
     elems.forEach(link => {
