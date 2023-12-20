@@ -307,7 +307,7 @@ body {
   fill: #fcfcfc;
 }
 
-.navigation-link-open {
+.navigation-link-open:hover {
   background-color: #ff4a78;
   color: #fcfcfc;
   border-radius: 30px;

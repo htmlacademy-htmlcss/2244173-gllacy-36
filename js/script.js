@@ -1,6 +1,8 @@
+let elems = document.querySelectorAll('.navigation-drop-down');
+
 document.querySelectorAll(".navigation-button").forEach(button => {
   button.addEventListener('click', function(event) {
-    document.querySelectorAll('.navigation-drop-down').forEach(link => {
+    elems.forEach(link => {
       if (link.querySelector('.navigation-button') !== button) {
         link.firstElementChild.classList.remove('navigation-link-open')
       }
@@ -14,12 +16,11 @@ document.querySelectorAll(".navigation-button").forEach(button => {
 
 document.body.addEventListener('click', function(event) {
   if (
-    event.target.classList.contains('navigation-button') == true ||
-    event.target.classList.contains('popover') == true
+    event.currentTarget.classList.contains('navigation-button') == true ||
+    event.currentTarget.classList.contains('popover') == true
     ) return
 
-  document.querySelectorAll('.navigation-drop-down').forEach(link => {
-    link.classList.remove('navigation-link-open')
+    elems.forEach(link => {
+    link.firstElementChild.classList.remove('navigation-link-open')
   })
-
 })
