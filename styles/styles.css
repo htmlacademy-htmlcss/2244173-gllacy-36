@@ -336,6 +336,12 @@ body {
 .navigation-link-open + .popover-cart {
   display: block;
 }
+.noclose {
+  display: block;
+}
+/* .navigation-link-open + .popover-cart-empty {
+  display: block;
+} */
 
 .navigation-link-open:hover {
   opacity: 60%;
@@ -715,7 +721,7 @@ body {
 
 .slide-container-mini {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-left: 75px;
   gap: 10px 75px;
 }
